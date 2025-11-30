@@ -91,6 +91,26 @@ body {
   gap: 1.25rem;
   font-size: 0.9rem;
 }
+.nav-link-external {
+  display: inline-flex;
+  align-items: center;
+}
+
+.lang-switch {
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.lang-switch:hover {
+  border-color: #6b7280;
+  background: rgba(15, 23, 42, 0.9);
+}
+
 
 .nav a {
   text-decoration: none;
