@@ -91,9 +91,6 @@ body {
   gap: 1.25rem;
   font-size: 0.9rem;
 }
-.nav-link-external {
-  display: inline-block;
-}
 
 .lang-switch {
   padding: 0.25rem 0.8rem;
