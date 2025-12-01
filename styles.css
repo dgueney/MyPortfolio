@@ -402,3 +402,14 @@ a:hover {
     flex-direction: row;
   }
 }
+
+.project-link {
+  color: #22d3ee;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
