@@ -92,8 +92,7 @@ body {
   font-size: 0.9rem;
 }
 .nav-link-external {
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
 }
 
 .lang-switch {
