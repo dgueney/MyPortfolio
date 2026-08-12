@@ -1,0 +1,388 @@
+{
+  "name": "Denizcan Güney",
+  "email": "denizcan.gueney@gmail.com",
+  "phone": "+49 176 70815328",
+  "phoneHref": "+4917670815328",
+  "location": {
+    "de": "Berlin, Deutschland",
+    "en": "Berlin, Germany"
+  },
+  "linkedin": "https://www.linkedin.com/in/denizcangueney",
+  "website": "https://denizcangueney.de/",
+  "availability": {
+    "de": "Verfügbar ab 10/2026 · Studienabschluss voraussichtlich 12/2026",
+    "en": "Available from 10/2026 · Degree expected 12/2026"
+  },
+  "profiles": {
+    "full": {
+      "suffix": "",
+      "headline": {
+        "de": "Wirtschaftsinformatik (B.Sc.) – Data & Business Intelligence",
+        "en": "Business Informatics (B.Sc.) – Data & Business Intelligence"
+      },
+      "summary": {
+        "de": "Bachelorstudent der Wirtschaftsinformatik (HWR Berlin) an der Schnittstelle von Daten, BI und Produkt. Aktuell Pflichtpraktikum bei der Robert Bosch GmbH im Bereich Data Excellence / Business Intelligence, dort verantwortlich für ein Python-basiertes Data-Quality-Monitoring und historisierte Power-BI-Analysen. Zuvor zwei Jahre Werkstudent im Produktmanagement bei Jelbi (BVG) mit Schwerpunkt Fraud Prevention und datengetriebener Produktoptimierung.",
+        "en": "Business Informatics student (HWR Berlin) working at the intersection of data, BI and product. Currently completing a mandatory internship at Robert Bosch GmbH in Data Excellence / Business Intelligence, where I own a Python-based data quality monitoring solution and historized Power BI analyses. Previously two years as a working student in product management at Jelbi (BVG), focused on fraud prevention and data-driven product optimization."
+      }
+    },
+    "data": {
+      "suffix": "-data",
+      "headline": {
+        "de": "Wirtschaftsinformatik (B.Sc.) – Data Analyst / Business Intelligence",
+        "en": "Business Informatics (B.Sc.) – Data Analyst / Business Intelligence"
+      },
+      "summary": {
+        "de": "Bachelorstudent der Wirtschaftsinformatik (HWR Berlin) mit Schwerpunkt Data Quality, Business Intelligence und Datenmodellierung. Im aktuellen Praktikum bei der Robert Bosch GmbH entwickle ich ein Python-basiertes Data-Quality-Monitoring sowie historisierte Power-BI-Reports auf SQL- und Data-Warehouse-Daten. Erfahrung in der Analyse großer, heterogener und unvollständig dokumentierter Datenbestände.",
+        "en": "Business Informatics student (HWR Berlin) focused on data quality, business intelligence and data modeling. In my current internship at Robert Bosch GmbH I build a Python-based data quality monitoring solution and historized Power BI reports on SQL and data warehouse sources. Experienced in analyzing large, heterogeneous and poorly documented data landscapes."
+      }
+    },
+    "product": {
+      "suffix": "-product",
+      "headline": {
+        "de": "Wirtschaftsinformatik (B.Sc.) – Product / Business Analyst",
+        "en": "Business Informatics (B.Sc.) – Product / Business Analyst"
+      },
+      "summary": {
+        "de": "Bachelorstudent der Wirtschaftsinformatik (HWR Berlin) mit zwei Jahren Produktmanagement-Erfahrung bei Jelbi (BVG), dort verantwortlich für Fraud Monitoring, Verifizierungsprozesse und datengetriebene Produktverbesserungen. Aktuell Praktikum bei der Robert Bosch GmbH mit Fokus auf Anforderungsmanagement, Reporting-Governance und der Übersetzung fachlicher Problemstellungen in technische Lösungen.",
+        "en": "Business Informatics student (HWR Berlin) with two years of product management experience at Jelbi (BVG), owning fraud monitoring, verification processes and data-driven product improvements. Currently interning at Robert Bosch GmbH with a focus on requirements management, reporting governance and translating business problems into technical solutions."
+      }
+    }
+  },
+  "labels": {
+    "de": {
+      "documentTitle": "Lebenslauf – Denizcan Güney",
+      "printButton": "Drucken / als PDF speichern",
+      "backToPortfolio": "Zum Portfolio",
+      "langSwitch": "EN",
+      "summary": "Profil",
+      "experience": "Berufserfahrung",
+      "projects": "Projekte",
+      "education": "Bildungsweg",
+      "skills": "Kenntnisse",
+      "languages": "Sprachen",
+      "ongoing": "laufend",
+      "skipLink": "Zum Inhalt springen"
+    },
+    "en": {
+      "documentTitle": "Résumé – Denizcan Güney",
+      "printButton": "Print / Save as PDF",
+      "backToPortfolio": "Back to portfolio",
+      "langSwitch": "DE",
+      "summary": "Profile",
+      "experience": "Experience",
+      "projects": "Projects",
+      "education": "Education",
+      "skills": "Skills",
+      "languages": "Languages",
+      "ongoing": "ongoing",
+      "skipLink": "Skip to content"
+    }
+  },
+  "experience": [
+    {
+      "company": {
+        "de": "Robert Bosch GmbH",
+        "en": "Robert Bosch GmbH"
+      },
+      "title": {
+        "de": "Pflichtpraktikum Wirtschaftsinformatik – Data Excellence / Business Intelligence",
+        "en": "Mandatory Internship in Business Informatics – Data Excellence / Business Intelligence"
+      },
+      "location": {
+        "de": "Berlin",
+        "en": "Berlin"
+      },
+      "start": "04/2026",
+      "end": "09/2026",
+      "ongoing": true,
+      "bullets": [
+        {
+          "tags": ["data", "product"],
+          "de": "Python-basiertes Data-Quality-Monitoring-Framework eigenständig konzipiert und entwickelt, das Prüfung, Bewertung und Historisierung von CAFM-Daten automatisiert und wiederkehrende manuelle Kontrollen ersetzt.",
+          "en": "Independently designed and built a Python-based data quality monitoring framework that automates validation, scoring and historization of CAFM data, replacing recurring manual checks."
+        },
+        {
+          "tags": ["data", "product"],
+          "de": "Power-BI-Change-Report aufgebaut, der Veränderungen an Raum-, Flächen- und Organisationsdaten über die Zeit sichtbar macht und Fachbereichen die Nachverfolgung ohne manuelle Datenvergleiche ermöglicht.",
+          "en": "Built a Power BI change report that surfaces changes to space, area and organizational data over time, allowing business units to track them without manual data comparisons."
+        },
+        {
+          "tags": ["data"],
+          "de": "Delta-, Historisierungs- und Vergleichslogiken entworfen, die neue, entfallene und veränderte Datensätze automatisch identifizieren; Datenaufbereitung aus SQL-/Data-Warehouse- und Excel-Quellen standardisiert.",
+          "en": "Designed delta, historization and comparison logic that automatically identifies new, removed and changed records; standardized data preparation from SQL, data warehouse and Excel sources."
+        },
+        {
+          "tags": ["data"],
+          "de": "Rund 20 bislang unvollständig dokumentierte CAFM-Tabellen und Datenmodelle analysiert und technisch dokumentiert (inkl. Entity-Relationship-Diagrammen) – als Grundlage für Weiterentwicklung und Onboarding im Team.",
+          "en": "Analyzed and technically documented around 20 previously under-documented CAFM tables and data models, including entity-relationship diagrams, as a basis for further development and team onboarding."
+        },
+        {
+          "tags": ["product"],
+          "de": "Reporting-Katalog und Power-BI-Landing-Page mit Metadatenmodell, Kategorisierung und Governance-Strukturen konzipiert, um verstreute Berichte zentral auffindbar und bewertbar zu machen.",
+          "en": "Conceived a reporting catalog and Power BI landing page with metadata model, categorization and governance structures to make scattered reports centrally discoverable and assessable."
+        },
+        {
+          "tags": ["product"],
+          "de": "Agil mit Product Ownern, Systemarchitektur, Data-Warehouse-Team, Fachbereichen und externen Softwarepartnern in einem internationalen, englischsprachigen Umfeld zusammengearbeitet (Jira, iterative Reviews).",
+          "en": "Collaborated agilely with product owners, system architecture, the data warehouse team, business units and external software partners in an international, English-speaking environment (Jira, iterative reviews)."
+        }
+      ]
+    },
+    {
+      "company": {
+        "de": "Berliner Verkehrsbetriebe (BVG) – Jelbi",
+        "en": "Berliner Verkehrsbetriebe (BVG) – Jelbi"
+      },
+      "title": {
+        "de": "Werkstudent Produktmanagement",
+        "en": "Working Student Product Management"
+      },
+      "location": {
+        "de": "Berlin",
+        "en": "Berlin"
+      },
+      "start": "04/2024",
+      "end": "03/2026",
+      "bullets": [
+        {
+          "tags": ["data", "product"],
+          "de": "Fraudbezogene Vorfälle um ca. 30–40 % reduziert durch datenbasierte Analyse, Optimierung bestehender Fraud-Detection-Logiken und gezielte Regelanpassungen.",
+          "en": "Reduced fraud-related incidents by approximately 30–40% through data analysis, optimization of existing fraud detection logic and targeted rule adjustments."
+        },
+        {
+          "tags": ["data", "product"],
+          "de": "Eigenständiges Fraud Monitoring aufgebaut, neue Betrugsmuster identifiziert und daraus konkrete Gegenmaßnahmen abgeleitet.",
+          "en": "Established independent fraud monitoring, identified emerging fraud patterns and derived concrete countermeasures."
+        },
+        {
+          "tags": ["product"],
+          "de": "Verifizierungsmanagement für Nutzerkonten verantwortet und die zugehörigen Prüfprozesse weiterentwickelt.",
+          "en": "Owned verification management for user accounts and further developed the associated review processes."
+        },
+        {
+          "tags": ["data", "product"],
+          "de": "User Feedback, Supportfälle und Nutzungsdaten ausgewertet und daraus Verbesserungen der After-Ride Experience abgeleitet.",
+          "en": "Analyzed user feedback, support cases and usage data to derive improvements to the after-ride experience."
+        },
+        {
+          "tags": ["product"],
+          "de": "2nd-Level-Support und Bug-Analyse in enger Abstimmung mit externen Software-Dienstleistern.",
+          "en": "Handled second-level support and bug analysis in close coordination with external software vendors."
+        }
+      ]
+    },
+    {
+      "company": {
+        "de": "ViaConsulting Inh. M. Tutkun",
+        "en": "ViaConsulting Inh. M. Tutkun"
+      },
+      "title": {
+        "de": "Werkstudent",
+        "en": "Working Student"
+      },
+      "location": {
+        "de": "Berlin",
+        "en": "Berlin"
+      },
+      "start": "10/2021",
+      "end": "04/2024",
+      "bullets": [
+        {
+          "tags": ["data", "product"],
+          "de": "Assistenz der Geschäftsführung, Prozesskoordination und administrative Unterstützung.",
+          "en": "Assisted management with process coordination and administrative support."
+        }
+      ]
+    },
+    {
+      "company": {
+        "de": "Tecis",
+        "en": "Tecis"
+      },
+      "title": {
+        "de": "Selbstständig",
+        "en": "Self-employed"
+      },
+      "location": {
+        "de": "Berlin",
+        "en": "Berlin"
+      },
+      "start": "10/2020",
+      "end": "09/2021",
+      "bullets": [
+        {
+          "tags": ["data", "product"],
+          "de": "Kundenakquise, Aufnahme von Kundendaten und Beratung auf Basis individueller Bedarfsanalysen.",
+          "en": "Client acquisition, recording of client data and advisory based on individual needs analyses."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "tags": ["data", "product"],
+      "name": {
+        "de": "Fix It Together – Full-Stack-Webanwendung",
+        "en": "Fix It Together – full-stack web application"
+      },
+      "description": {
+        "de": "Plattform für Reparaturanfragen von Kaffeemaschinen mit Ticketing, Matching passender Reparateur:innen, Chat, Bewertungen und Filterfunktionen. Python, MySQL, HTML/CSS.",
+        "en": "Platform for coffee machine repair requests with ticketing, matching of suitable repairers, chat, ratings and filtering. Python, MySQL, HTML/CSS."
+      },
+      "link": "https://github.com/timmundt/Fix-It-Togehter"
+    },
+    {
+      "tags": ["product"],
+      "name": {
+        "de": "Verifizierungs-API (Konzept)",
+        "en": "Verification API (concept)"
+      },
+      "description": {
+        "de": "Konzept einer API zur Dokumenten- und Identitätsprüfung mit Fraud-Detection-Regeln, Sicherheitsmechanismen und automatisierten Entscheidungen für angebundene Systeme.",
+        "en": "Concept for an API for document and identity verification with fraud detection rules, security mechanisms and automated decisions for connected systems."
+      },
+      "link": ""
+    },
+    {
+      "tags": ["data"],
+      "name": {
+        "de": "Signal- & Monitoring-System (Hochschulprojekt Robotik)",
+        "en": "Signal & monitoring system (university robotics project)"
+      },
+      "description": {
+        "de": "Visuelle und akustische Statussignale für einen Foyer-Roboter inklusive Statusanzeigen und Integration in die bestehende Systemarchitektur (ROS).",
+        "en": "Visual and acoustic status signals for a foyer robot, including status displays and integration into the existing system architecture (ROS)."
+      },
+      "link": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": {
+        "de": "Hochschule für Wirtschaft und Recht (HWR) Berlin",
+        "en": "Berlin School of Economics and Law (HWR Berlin)"
+      },
+      "degree": {
+        "de": "Bachelor of Science, Wirtschaftsinformatik",
+        "en": "Bachelor of Science, Business Informatics"
+      },
+      "details": {
+        "de": "Schwerpunkt auf praxisorientierten Wirtschafts- und IT-Prozessen, Datenmanagement und Prozessautomatisierung.",
+        "en": "Focus on practice-oriented business and IT processes, data management and process automation."
+      },
+      "start": "04/2024",
+      "end": {
+        "de": "voraussichtlich 12/2026",
+        "en": "expected 12/2026"
+      }
+    },
+    {
+      "institution": {
+        "de": "Technische Universität Berlin",
+        "en": "Technische Universität Berlin"
+      },
+      "degree": {
+        "de": "B.Sc. Wirtschaftsinformatik (Studienabschnitt bis zum Hochschulwechsel)",
+        "en": "B.Sc. Business Informatics (studies until university transfer)"
+      },
+      "details": {
+        "de": "Schwerpunkt auf der Automatisierung von Geschäftsprozessen; Wechsel an die HWR Berlin zugunsten des stärker praxis- und anwendungsorientierten Profils.",
+        "en": "Focus on business process automation; transferred to HWR Berlin for its more practice- and application-oriented profile."
+      },
+      "start": "09/2019",
+      "end": "03/2024"
+    },
+    {
+      "institution": {
+        "de": "Freie Universität Berlin",
+        "en": "Freie Universität Berlin"
+      },
+      "degree": {
+        "de": "Bachelorstudium Informatik (1 Semester)",
+        "en": "Bachelor studies in Computer Science (1 semester)"
+      },
+      "details": {
+        "de": "",
+        "en": ""
+      },
+      "start": "04/2019",
+      "end": "09/2019"
+    },
+    {
+      "institution": {
+        "de": "Leibniz-Gymnasium, Berlin",
+        "en": "Leibniz-Gymnasium, Berlin"
+      },
+      "degree": {
+        "de": "Allgemeine Hochschulreife",
+        "en": "General university entrance qualification (Abitur)"
+      },
+      "details": {
+        "de": "Leistungskurse: Informatik und Englisch.",
+        "en": "Advanced courses: Computer Science and English."
+      },
+      "start": "09/2012",
+      "end": "06/2018"
+    }
+  ],
+  "skills": [
+    {
+      "tags": ["data", "product"],
+      "category": {
+        "de": "Data & Business Intelligence",
+        "en": "Data & Business Intelligence"
+      },
+      "items": {
+        "de": ["Power BI", "Power Query", "SQL", "Datenmodellierung", "Data Quality", "Data Governance", "Data Warehouse"],
+        "en": ["Power BI", "Power Query", "SQL", "Data Modeling", "Data Quality", "Data Governance", "Data Warehousing"]
+      }
+    },
+    {
+      "tags": ["data", "product"],
+      "category": {
+        "de": "Programmierung & Analyse",
+        "en": "Programming & Analytics"
+      },
+      "items": {
+        "de": ["Python", "pandas", "NumPy", "Plotly", "Streamlit", "Excel"],
+        "en": ["Python", "pandas", "NumPy", "Plotly", "Streamlit", "Excel"]
+      }
+    },
+    {
+      "tags": ["data", "product"],
+      "category": {
+        "de": "Methoden & Systeme",
+        "en": "Methods & Systems"
+      },
+      "items": {
+        "de": ["Anforderungsmanagement", "Agile Zusammenarbeit (Jira)", "Technische Dokumentation", "Stakeholdermanagement", "Fraud Prevention", "Archibus (CAFM)"],
+        "en": ["Requirements management", "Agile collaboration (Jira)", "Technical documentation", "Stakeholder management", "Fraud prevention", "Archibus (CAFM)"]
+      }
+    },
+    {
+      "tags": [],
+      "category": {
+        "de": "Weitere Technologien",
+        "en": "Additional technologies"
+      },
+      "items": {
+        "de": ["Java", "JavaScript", "HTML/CSS", "Scala", "MySQL", "ROS", "SAP", "Microsoft Office"],
+        "en": ["Java", "JavaScript", "HTML/CSS", "Scala", "MySQL", "ROS", "SAP", "Microsoft Office"]
+      }
+    }
+  ],
+  "languages": {
+    "de": [
+      "Deutsch – Muttersprache",
+      "Türkisch – Muttersprache",
+      "Englisch – C1",
+      "Französisch – B1"
+    ],
+    "en": [
+      "German – native",
+      "Turkish – native",
+      "English – C1",
+      "French – B1"
+    ]
+  }
+}

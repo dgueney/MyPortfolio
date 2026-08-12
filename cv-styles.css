@@ -1,0 +1,263 @@
+/* ATS-friendly, print-optimized CV layout */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --cv-text: #111827;
+  --cv-muted: #4b5563;
+  --cv-border: #d1d5db;
+  --cv-bg: #ffffff;
+  --cv-accent: #1d4ed8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #e5e7eb;
+  color: var(--cv-text);
+  line-height: 1.45;
+  font-size: 11pt;
+}
+
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.5rem 0.85rem;
+  background: #fff;
+  color: var(--cv-text);
+  text-decoration: none;
+  border-radius: 0.35rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:where(a, button):focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.cv-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: #0f172a;
+}
+
+.cv-toolbar a,
+.cv-print-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid #64748b;
+  background: transparent;
+  color: #f8fafc;
+  text-decoration: none;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.cv-print-btn {
+  background: #22d3ee;
+  border-color: transparent;
+  color: #0b1120;
+  font-weight: 600;
+}
+
+.cv-toolbar a:hover,
+.cv-print-btn:hover {
+  filter: brightness(1.08);
+}
+
+.cv-page {
+  width: min(210mm, 100% - 2rem);
+  margin: 1.25rem auto 2rem;
+  padding: 18mm 16mm;
+  background: var(--cv-bg);
+  color: var(--cv-text);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
+.cv-header {
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--cv-text);
+}
+
+.cv-header h1 {
+  margin: 0 0 0.15rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.01em;
+}
+
+.cv-headline {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cv-accent);
+}
+
+.cv-contact {
+  margin: 0;
+  color: var(--cv-muted);
+  font-size: 0.92rem;
+}
+
+.cv-availability {
+  margin: 0.2rem 0 0;
+  font-size: 0.88rem;
+  color: var(--cv-muted);
+}
+
+.cv-contact a {
+  color: var(--cv-text);
+  text-decoration: none;
+}
+
+.cv-contact a:hover {
+  text-decoration: underline;
+}
+
+.cv-section {
+  margin-top: 1rem;
+}
+
+.cv-section > h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--cv-border);
+  padding-bottom: 0.2rem;
+}
+
+.cv-section > p {
+  margin: 0;
+}
+
+.cv-entry {
+  margin-bottom: 0.85rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cv-entry--compact {
+  margin-bottom: 0.6rem;
+}
+
+.cv-entry h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cv-entry > p {
+  margin: 0.15rem 0 0;
+}
+
+.cv-meta {
+  margin: 0.15rem 0 0.35rem;
+  color: var(--cv-muted);
+  font-size: 0.9rem;
+}
+
+.cv-org {
+  font-weight: 600;
+  color: var(--cv-text);
+}
+
+.cv-entry ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.cv-entry li {
+  margin-bottom: 0.2rem;
+}
+
+.cv-skill-row {
+  margin: 0 0 0.3rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cv-skill-label {
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .cv-page {
+    width: calc(100% - 1rem);
+    margin: 0.75rem auto 1.5rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .cv-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .cv-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .cv-page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .cv-entry,
+  .cv-skill-row {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .cv-section {
+    break-inside: auto;
+  }
+
+  .cv-section > h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}
