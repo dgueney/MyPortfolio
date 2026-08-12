@@ -84,7 +84,7 @@ function renderProjects(lang, profile) {
   return projects
     .map((project) => {
       const link = project.link
-        ? ` <a href="${escapeHtml(project.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(project.link.replace(/^https?:\/\//, ""))}</a>`
+        ? ` <a class="cv-project-link" href="${escapeHtml(project.link)}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>`
         : "";
 
       return `      <article class="cv-entry cv-entry--compact">
@@ -138,7 +138,7 @@ function renderDocument(profileKey, lang) {
   const projectSection = projects
     ? `
 
-    <section class="cv-section" aria-labelledby="projects-heading">
+    <section class="cv-section cv-section--projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading">${escapeHtml(labels.projects)}</h2>
 
 ${projects}
@@ -180,24 +180,24 @@ ${projects}
       <p class="cv-availability">${escapeHtml(t(data.availability, lang))}</p>
     </header>
 
-    <section class="cv-section" aria-labelledby="summary-heading">
+    <section class="cv-section cv-section--profile" aria-labelledby="summary-heading">
       <h2 id="summary-heading">${escapeHtml(labels.summary)}</h2>
       <p>${escapeHtml(summary)}</p>
     </section>
 
-    <section class="cv-section" aria-labelledby="experience-heading">
+    <section class="cv-section cv-section--experience" aria-labelledby="experience-heading">
       <h2 id="experience-heading">${escapeHtml(labels.experience)}</h2>
 
 ${renderExperience(lang, profileKey, labels)}
     </section>${projectSection}
 
-    <section class="cv-section" aria-labelledby="education-heading">
+    <section class="cv-section cv-section--education" aria-labelledby="education-heading">
       <h2 id="education-heading">${escapeHtml(labels.education)}</h2>
 
 ${renderEducation(lang, labels)}
     </section>
 
-    <section class="cv-section" aria-labelledby="skills-heading">
+    <section class="cv-section cv-section--skills" aria-labelledby="skills-heading">
       <h2 id="skills-heading">${escapeHtml(labels.skills)}</h2>
 ${renderSkills(lang, profileKey, labels)}
     </section>

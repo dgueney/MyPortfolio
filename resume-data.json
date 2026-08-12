@@ -21,33 +21,33 @@
     "full": {
       "suffix": "",
       "headline": {
-        "de": "Wirtschaftsinformatik (B.Sc.) – Data & Business Intelligence",
-        "en": "Business Informatics (B.Sc.) – Data & Business Intelligence"
+        "de": "B.Sc.-Student Wirtschaftsinformatik – Data & Business Intelligence",
+        "en": "B.Sc. Business Informatics Student – Data & Business Intelligence"
       },
       "summary": {
-        "de": "Wirtschaftsinformatik-Student an der Schnittstelle von Daten, BI und Produkt. Aktuell Praktikum bei Bosch (Data Excellence / BI) mit Python-basiertem Data-Quality-Monitoring und Power-BI-Reporting, zuvor zwei Jahre Produktmanagement bei Jelbi (BVG) mit Schwerpunkt Fraud Prevention.",
-        "en": "Business Informatics student working at the intersection of data, BI and product. Currently interning at Bosch (Data Excellence / BI) building Python-based data quality monitoring and Power BI reporting; previously two years in product management at Jelbi (BVG) focused on fraud prevention."
+        "de": "Student der Wirtschaftsinformatik an der Schnittstelle von Daten, BI und Produkt. Aktuell im Praktikum bei Bosch (Data Excellence / BI) mit Fokus auf Python-basiertes Data-Quality-Monitoring und Power-BI-Reporting; zuvor zwei Jahre im Produktmanagement bei Jelbi (BVG) mit Schwerpunkt Fraud Prevention.",
+        "en": "Business Informatics student at the intersection of data, BI and product. Currently interning at Bosch (Data Excellence / BI), focused on Python-based data quality monitoring and Power BI reporting; previously two years in product management at Jelbi (BVG), focused on fraud prevention."
       }
     },
     "data": {
       "suffix": "-data",
       "headline": {
-        "de": "Wirtschaftsinformatik (B.Sc.) – Data Analyst / Business Intelligence",
-        "en": "Business Informatics (B.Sc.) – Data Analyst / Business Intelligence"
+        "de": "B.Sc.-Student Wirtschaftsinformatik – Data Analyst / Business Intelligence",
+        "en": "B.Sc. Business Informatics Student – Data Analyst / Business Intelligence"
       },
       "summary": {
-        "de": "Wirtschaftsinformatik-Student mit Schwerpunkt Data Quality, Business Intelligence und Datenmodellierung. Im Praktikum bei Bosch entwickle ich ein Python-basiertes Data-Quality-Monitoring und historisierte Power-BI-Reports auf SQL- und Data-Warehouse-Daten.",
+        "de": "Student der Wirtschaftsinformatik mit Schwerpunkt Data Quality, Business Intelligence und Datenmodellierung. Im Praktikum bei Bosch entwickle ich ein Python-basiertes Data-Quality-Monitoring und historisierte Power-BI-Reports auf SQL- und Data-Warehouse-Daten.",
         "en": "Business Informatics student focused on data quality, business intelligence and data modeling. In my internship at Bosch I build Python-based data quality monitoring and historized Power BI reports on SQL and data warehouse sources."
       }
     },
     "product": {
       "suffix": "-product",
       "headline": {
-        "de": "Wirtschaftsinformatik (B.Sc.) – Product / Business Analyst",
-        "en": "Business Informatics (B.Sc.) – Product / Business Analyst"
+        "de": "B.Sc.-Student Wirtschaftsinformatik – Product / Business Analyst",
+        "en": "B.Sc. Business Informatics Student – Product / Business Analyst"
       },
       "summary": {
-        "de": "Wirtschaftsinformatik-Student mit zwei Jahren Produktmanagement bei Jelbi (BVG): Fraud Monitoring, Verifizierungsprozesse und datengetriebene Produktverbesserungen. Aktuell Praktikum bei Bosch mit Fokus auf Anforderungsmanagement und Reporting-Governance.",
+        "de": "Student der Wirtschaftsinformatik mit zwei Jahren Produktmanagement bei Jelbi (BVG): Fraud Monitoring, Verifizierungsprozesse und datengetriebene Produktverbesserungen. Aktuell im Praktikum bei Bosch mit Fokus auf Anforderungsmanagement und Reporting-Governance.",
         "en": "Business Informatics student with two years of product management at Jelbi (BVG): fraud monitoring, verification processes and data-driven product improvements. Currently interning at Bosch with a focus on requirements management and reporting governance."
       }
     }
@@ -150,7 +150,7 @@
       "bullets": [
         {
           "tags": ["data", "product"],
-          "de": "Fraudbezogene Vorfälle um ca. 30–40 % reduziert durch Optimierung der Fraud-Detection-Logiken und gezielte Regelanpassungen.",
+          "de": "Fraudbezogene Vorfälle um 30–40 % reduziert – durch optimierte Fraud-Detection-Logiken und gezielte Regelanpassungen.",
           "en": "Reduced fraud-related incidents by roughly 30–40% by optimizing fraud detection logic and adjusting rules."
         },
         {
@@ -165,7 +165,7 @@
         },
         {
           "tags": ["data", "product"],
-          "de": "User Feedback, Supportfälle und Nutzungsdaten ausgewertet und daraus Produktverbesserungen abgeleitet.",
+          "de": "Nutzerfeedback, Supportfälle und Nutzungsdaten ausgewertet und daraus Produktverbesserungen abgeleitet.",
           "en": "Analyzed user feedback, support cases and usage data to derive product improvements."
         },
         {
