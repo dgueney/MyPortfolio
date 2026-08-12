@@ -37,6 +37,11 @@ function matchesProfile(entry, profile) {
   return Array.isArray(entry.tags) && entry.tags.includes(profile);
 }
 
+/** Keeps the CV to one page: entries are ordered by relevance, so slicing keeps the strongest. */
+function limit(entries, max) {
+  return max > 0 ? entries.slice(0, max) : entries;
+}
+
 function renderPeriod(entry, lang, labels) {
   const start = escapeHtml(t(entry.start, lang));
   const end = escapeHtml(t(entry.end, lang));
@@ -47,7 +52,10 @@ function renderPeriod(entry, lang, labels) {
 function renderExperience(lang, profile, labels) {
   return data.experience
     .map((job) => {
-      const bullets = job.bullets.filter((bullet) => matchesProfile(bullet, profile));
+      const bullets = limit(
+        job.bullets.filter((bullet) => matchesProfile(bullet, profile)),
+        data.limits.bulletsPerRole
+      );
       if (!bullets.length) return "";
 
       const items = bullets
@@ -67,7 +75,10 @@ ${items}
 }
 
 function renderProjects(lang, profile) {
-  const projects = data.projects.filter((project) => matchesProfile(project, profile));
+  const projects = limit(
+    data.projects.filter((project) => matchesProfile(project, profile)),
+    data.limits.projects
+  );
   if (!projects.length) return "";
 
   return projects
@@ -88,28 +99,27 @@ function renderEducation(lang, labels) {
   return data.education
     .map((edu) => {
       const details = t(edu.details, lang);
-      const detailsHtml = details ? `\n        <p>${escapeHtml(details)}</p>` : "";
+      const detailsHtml = details ? ` · ${escapeHtml(details)}` : "";
 
       return `      <article class="cv-entry cv-entry--compact">
         <h3>${escapeHtml(t(edu.institution, lang))}</h3>
-        <p class="cv-meta">${escapeHtml(t(edu.degree, lang))} · ${renderPeriod(edu, lang, labels)}</p>${detailsHtml}
+        <p class="cv-meta">${escapeHtml(t(edu.degree, lang))} · ${renderPeriod(edu, lang, labels)}${detailsHtml}</p>
       </article>`;
-    })
-    .join("\n\n");
-}
-
-function renderSkills(lang, profile) {
-  return data.skills
-    .filter((group) => matchesProfile(group, profile))
-    .map((group) => {
-      const items = t(group.items, lang).map(escapeHtml).join(" · ");
-      return `      <p class="cv-skill-row"><span class="cv-skill-label">${escapeHtml(t(group.category, lang))}:</span> ${items}</p>`;
     })
     .join("\n");
 }
 
-function renderLanguages(lang) {
-  return t(data.languages, lang).map(escapeHtml).join(" · ");
+function skillRow(label, items) {
+  return `      <p class="cv-skill-row"><span class="cv-skill-label">${escapeHtml(label)}:</span> ${items.map(escapeHtml).join(" · ")}</p>`;
+}
+
+function renderSkills(lang, profile, labels) {
+  const groups = data.skills
+    .filter((group) => matchesProfile(group, profile))
+    .map((group) => skillRow(t(group.category, lang), t(group.items, lang)));
+
+  groups.push(skillRow(labels.languages, t(data.languages, lang)));
+  return groups.join("\n");
 }
 
 function fileName(profileConfig, lang) {
@@ -189,12 +199,7 @@ ${renderEducation(lang, labels)}
 
     <section class="cv-section" aria-labelledby="skills-heading">
       <h2 id="skills-heading">${escapeHtml(labels.skills)}</h2>
-${renderSkills(lang, profileKey)}
-    </section>
-
-    <section class="cv-section" aria-labelledby="languages-heading">
-      <h2 id="languages-heading">${escapeHtml(labels.languages)}</h2>
-      <p>${renderLanguages(lang)}</p>
+${renderSkills(lang, profileKey, labels)}
     </section>
   </main>
 </body>
