@@ -3,24 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Denizcan Güney – Business Informatics, data management, process automation and digital product development in Berlin." />
+  <meta name="author" content="Denizcan Güney" />
+  <meta name="theme-color" content="#050816" />
+  <meta property="og:title" content="Denizcan Güney – Portfolio" />
+  <meta property="og:description" content="Business Informatics, data management, process automation and digital product development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://denizcangueney.de/en.html" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <link rel="canonical" href="https://denizcangueney.de/en.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <title>Denizcan Güney – Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
+      <a class="logo" href="#top" aria-label="Back to top">
         <span class="logo-mark">DG</span>
         <span class="logo-text">Denizcan Güney</span>
-      </div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-        <a href="https://www.linkedin.com/in/denizcangueney" target="_blank" rel="noopener" class="nav-link-external">
+        <a href="https://www.linkedin.com/in/denizcangueney" target="_blank" rel="noopener noreferrer" class="nav-link-external">
           LinkedIn
         </a>
         <a href="index.html" class="lang-switch">DE</a>
@@ -28,7 +41,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-inner">
@@ -43,40 +56,72 @@
             <a href="DenizcanLebenslauf.pdf" class="btn primary" target="_blank" rel="noopener" download>
               Download CV (PDF)
             </a>
-            <a href="#about" class="btn ghost">Learn more</a>
-            <a href="#contact" class="btn ghost">Contact</a>
+            <a href="#projects" class="btn ghost">View projects</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container section-inner two-columns">
-        <div>
-          <h2>About me</h2>
-          <p>
-            I am a Business Informatics student at HWR Berlin and currently completing an internship at Bosch in the field of data management and process automation. There, I work on integrating, processing and automating complex data within enterprise systems.
-          </p>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container section-inner">
+        <h2>Projects (selection)</h2>
+        <p class="section-intro">
+          A selection of concepts and applications that reflect my work at the intersection of data, products and processes.
+        </p>
+        <div class="grid-2">
+          <article class="card project-card">
+            <h3>Verification API (concept)</h3>
+            <p>
+              Concept for an API-based solution for document and identity verification with a focus on fraud detection,
+              security mechanisms and automated decisions for connected systems.
+            </p>
+            <ul class="tag-list project-tags" aria-label="Technologies and topics">
+              <li>API Design</li>
+              <li>Fraud Prevention</li>
+              <li>Identity Verification</li>
+            </ul>
+            <div class="project-links">
+              <span class="project-note">Concept · no public repository</span>
+            </div>
+          </article>
 
-          <p>
-            Previously, I worked as a working student in product management at Jelbi, focusing on verification processes, fraud monitoring and data-driven product optimizations. By analyzing user data and fraud patterns, I contributed to reducing fraud and improving platform security.
-          </p>
+          <article class="card project-card">
+            <h3>Signal & Monitoring System (robotics project)</h3>
+            <p>
+              Participation in a university project to develop a signal and monitoring system for a foyer robot
+              (visual and acoustic signals, status indication, integration into existing system architecture).
+            </p>
+            <ul class="tag-list project-tags" aria-label="Technologies and topics">
+              <li>ROS</li>
+              <li>Monitoring</li>
+              <li>System Integration</li>
+            </ul>
+            <div class="project-links">
+              <span class="project-note">University project · no public repository</span>
+            </div>
+          </article>
 
-          <p>
-            Through my academic background at TU Berlin and FU Berlin, I bring both technical and business perspectives to digital products. I am particularly interested in the intersection of data, product and processes – especially where automation and data-driven decisions create real impact.
-          </p>
+          <article class="card project-card">
+            <h3>Full-Stack Web Application – “Fix It Together”</h3>
+            <p>
+              Development of a full-stack web application enabling users to submit repair requests
+              for De’Longhi coffee machines. The platform includes a ticketing system, repair partner
+              selection, integrated chat, rating functionality and filtering features.
+            </p>
+            <ul class="tag-list project-tags" aria-label="Technologies">
+              <li>Python</li>
+              <li>MySQL</li>
+              <li>HTML/CSS</li>
+              <li>Full Stack</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/timmundt/Fix-It-Togehter" target="_blank" rel="noopener noreferrer" class="project-link">
+                GitHub repository <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
         </div>
-        <aside class="info-card">
-          <h3>Profile</h3>
-          <ul class="info-list">
-            <li><span>Location</span><span>Berlin</span></li>
-            <li><span>Role</span><span>Intern – Bosch (Data Management & Automation)</span></li>
-            <li><span>Studies</span><span>B.Sc. Business Informatics, HWR Berlin</span></li>
-            <li><span>Email</span><span><a href="mailto:denizcan.gueney@gmail.com">denizcan.gueney@gmail.com</a></span></li>
-            <li><span>Languages</span><span>German, Turkish (native), English (C1), French (B1)</span></li>
-          </ul>
-        </aside>
       </div>
     </section>
 
@@ -138,34 +183,27 @@
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-      <div class="container section-inner">
-        <h2>Education</h2>
-        <div class="grid-2">
-          <article class="card">
-            <h3>Berlin School of Economics and Law (HWR Berlin)</h3>
-            <p class="meta">B.Sc. Business Informatics · Apr 2024 – expected Dec 2026</p>
-            <p>Focus on practice-oriented business and IT processes.</p>
-          </article>
-
-          <article class="card">
-            <h3>Technische Universität Berlin</h3>
-            <p class="meta">B.Sc. Business Informatics (course of study) · Sep 2019 – Mar 2024</p>
-            <p>Focus on automation of business processes.</p>
-          </article>
-
-          <article class="card">
-            <h3>Freie Universität Berlin</h3>
-            <p class="meta">Bachelor studies in Computer Science (1 semester) · Apr 2019 – Sep 2019</p>
-          </article>
-
-          <article class="card">
-            <h3>Leibniz-Gymnasium, Berlin</h3>
-            <p class="meta">General university entrance qualification (2.9) · Sep 2012 – Jun 2018</p>
-            <p>Advanced courses: Computer Science and English.</p>
-          </article>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container section-inner two-columns">
+        <div>
+          <h2>About me</h2>
+          <p>
+            I am a Business Informatics student at HWR Berlin and currently completing an internship at Bosch in data management and process automation. There, I integrate, process and automate complex data within enterprise systems.
+          </p>
+          <p>
+            Previously, I worked in product management at Jelbi, focusing on verification processes, fraud monitoring and data-driven product improvements. I combine technical and business perspectives and am particularly interested in digital products, efficient processes and data-driven decisions.
+          </p>
         </div>
+        <aside class="info-card">
+          <h3>Profile</h3>
+          <ul class="info-list">
+            <li><span>Location</span><span>Berlin</span></li>
+            <li><span>Role</span><span>Intern – Bosch (Data Management & Automation)</span></li>
+            <li><span>Studies</span><span>B.Sc. Business Informatics, HWR Berlin</span></li>
+            <li><span>Email</span><span><a href="mailto:denizcan.gueney@gmail.com">denizcan.gueney@gmail.com</a></span></li>
+          </ul>
+        </aside>
       </div>
     </section>
 
@@ -210,46 +248,33 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
+    <!-- Education Section -->
+    <section id="education" class="section">
       <div class="container section-inner">
-        <h2>Projects (selection)</h2>
-        <p class="section-intro">
-          A selection of projects I am currently working on or plan to document in more detail.
-        </p>
+        <h2>Education</h2>
         <div class="grid-2">
           <article class="card">
-            <h3>Verification API (concept)</h3>
-            <p>
-              Concept for an API-based solution for document and identity verification with a focus on fraud detection,
-              security mechanisms and automated decisions for connected systems.
-            </p>
+            <h3>Berlin School of Economics and Law (HWR Berlin)</h3>
+            <p class="meta">B.Sc. Business Informatics · Apr 2024 – expected Dec 2026</p>
+            <p>Focus on practice-oriented business and IT processes.</p>
           </article>
 
           <article class="card">
-            <h3>Signal & Monitoring System (robotics project)</h3>
-            <p>
-              Participation in a university project to develop a signal and monitoring system for a foyer robot
-              (visual and acoustic signals, status indication, integration into existing system architecture).
-            </p>
-          </article>
-          <article class="card">
-            <h3>Full-Stack Web Application – “Fix It Together”</h3>
-            <p>
-              Development of a full-stack web application enabling users to submit repair requests
-              for De’Longhi coffee machines. The platform includes a ticketing system, repair partner
-              selection, integrated chat, rating functionality and filtering features.
-            </p>
-            <p class="meta">
-              Tech stack: Python (backend routing), MySQL, HTML/CSS
-            </p>
-            <p>
-              <a href="https://github.com/timmundt/Fix-It-Togehter" target="_blank" rel="noopener" class="project-link">
-                → View GitHub Repository
-              </a>
-            </p>
+            <h3>Technische Universität Berlin</h3>
+            <p class="meta">B.Sc. Business Informatics (course of study) · Sep 2019 – Mar 2024</p>
+            <p>Focus on automation of business processes.</p>
           </article>
 
+          <article class="card card--compact">
+            <h3>Freie Universität Berlin</h3>
+            <p class="meta">Bachelor studies in Computer Science (1 semester) · Apr 2019 – Sep 2019</p>
+          </article>
+
+          <article class="card card--compact">
+            <h3>Leibniz-Gymnasium, Berlin</h3>
+            <p class="meta">General university entrance qualification (2.9) · Sep 2012 – Jun 2018</p>
+            <p>Advanced courses: Computer Science and English.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -260,14 +285,10 @@
         <div>
           <h2>Contact</h2>
           <p>
-            For questions, job opportunities or project ideas, the best way to reach me is via phone or email.
+            For job opportunities, questions or project ideas, I would be happy to hear from you.
+            I can provide additional documents such as certificates or a more detailed project overview on request.
           </p>
-          <p>
-            I am happy to provide additional documents such as certificates or a more detailed project overview on request.
-          </p>
-          <p>
-            A qualified reference from Berliner Verkehrsbetriebe (BVG) is available upon request.
-          </p>
+          <a href="mailto:denizcan.gueney@gmail.com" class="btn primary">Send an email</a>
         </div>
         <aside class="info-card">
           <h3>Contact details</h3>
