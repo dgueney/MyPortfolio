@@ -1,16 +1,16 @@
 # Portfolio & Lebenslauf – Denizcan Güney
 
-Statische Portfolio-Seite (`index.html` / `en.html`) plus ein generierter, ATS-freundlicher Lebenslauf.
+Statische Portfolio-Seite plus generierte, ATS-freundliche Lebensläufe – alle Inhalte aus `resume-data.json`.
 
-## Lebenslauf generieren
+## Inhalte aktualisieren
 
-Alle Inhalte des Lebenslaufs stehen in `resume-data.json`. Die HTML-Dateien werden daraus erzeugt und
-sollten nicht von Hand bearbeitet werden – Änderungen gehen beim nächsten Lauf verloren.
+Änderungen gehören in `resume-data.json`. Die HTML-Dateien werden daraus erzeugt und sollten nicht von Hand bearbeitet werden.
 
 ```bash
-node generate-cv.js                 # cv.html + cv-en.html (vollständige Fassung)
-node generate-cv.js --profile=data  # cv-data.html + cv-data-en.html
-node generate-cv.js --all           # alle Profile
+node generate-portfolio.js       # index.html + en.html
+node generate-cv.js              # cv.html + cv-en.html (vollständige Fassung)
+node generate-cv.js --profile=data # cv-data.html + cv-data-en.html
+node generate-cv.js --all        # alle CV-Profile
 ```
 
 Voraussetzung ist nur Node.js, es gibt keine Abhängigkeiten.
@@ -38,9 +38,11 @@ Der Lebenslauf ist auf eine A4-Seite ausgelegt. Dafür sorgt `limits` in `resume
 "limits": { "bulletsPerRole": 4, "projects": 2 }
 ```
 
-Bullets und Projekte stehen in absteigender Relevanz, der Generator schneidet den Rest ab. Es dürfen
-also mehr Einträge in der Datenbasis stehen, als am Ende gedruckt werden – wer eine ausführlichere
-Fassung braucht, erhöht die Limits, statt Inhalte zu löschen.
+Das Portfolio nutzt `portfolioLimits` (Standard: unbegrenzte Bullets pro Rolle) und den Abschnitt
+`portfolio` für Hero, Navigation, About-Texte und Card-Labels. Projekte können optional ein
+`portfolio.image`-Feld für Screenshots erhalten.
+
+Bullets und Projekte stehen in absteigender Relevanz, der CV-Generator schneidet den Rest ab.
 
 ## PDF erzeugen
 
@@ -50,8 +52,7 @@ deaktiviert, der Maßstab auf 100 % gesetzt und der Dateiname sprechend gewählt
 `Lebenslauf_Denizcan_Gueney.pdf`. Chrome liefert das verlässlichste Ergebnis; Safari skaliert
 standardmäßig anders und erzeugt sonst eine zusätzliche Seite.
 
-## Offene Punkte
+## Hinweise
 
-Die Bullets bei Bosch sind bewusst ergebnisorientiert formuliert, enthalten aber noch keine
-Kennzahlen. Sobald verfügbar, gehören dort Zahlen hinein: Anzahl geprüfter Datensätze und Regeln im
-Data-Quality-Framework, eingesparte Zeit durch den Change-Report, Anzahl der nutzenden Fachbereiche.
+- Der GitHub-Link zu „Fix It Together“ zeigt auf `Fix-It-Togehter` – das ist der tatsächliche Repository-Name (Tippfehler upstream).
+- Bosch-Bullets sind ergebnisorientiert formuliert; Kennzahlen können in `resume-data.json` ergänzt werden, sobald verfügbar (siehe `metricsNotes.bosch`).

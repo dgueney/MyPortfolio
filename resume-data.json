@@ -13,9 +13,19 @@
     "de": "Verfügbar ab 10/2026 · Studienabschluss voraussichtlich 12/2026",
     "en": "Available from 10/2026 · degree expected 12/2026"
   },
+  "availabilitySidebar": {
+    "de": "10/2026 · Studienabschluss voraussichtlich 12/2026",
+    "en": "10/2026 · degree expected 12/2026"
+  },
   "limits": {
     "bulletsPerRole": 4,
     "projects": 2
+  },
+  "portfolioLimits": {
+    "bulletsPerRole": 0
+  },
+  "metricsNotes": {
+    "bosch": "Optional KPIs when available: number of CAFM tables monitored, DQ rules in the framework, teams using the change report, time saved vs. manual checks."
   },
   "profiles": {
     "full": {
@@ -99,6 +109,32 @@
       "start": "04/2026",
       "end": "09/2026",
       "ongoing": true,
+      "portfolioTitle": {
+        "de": "Pflichtpraktikum Wirtschaftsinformatik – Data Excellence / Business Intelligence",
+        "en": "Mandatory Internship in Business Informatics – Data Excellence / Business Intelligence"
+      },
+      "portfolioBullets": [
+        {
+          "de": "Python-basiertes Data-Quality-Monitoring-Framework eigenständig konzipiert und entwickelt, das Prüfung, Bewertung und Historisierung von CAFM-Daten automatisiert und wiederkehrende manuelle Kontrollen ersetzt.",
+          "en": "Independently designed and built a Python-based data quality monitoring framework that automates validation, scoring and historization of CAFM data, replacing recurring manual checks."
+        },
+        {
+          "de": "Power-BI-Change-Report aufgebaut, der Veränderungen an Raum-, Flächen- und Organisationsdaten über die Zeit sichtbar macht und Fachbereichen die Nachverfolgung ohne manuelle Datenvergleiche ermöglicht.",
+          "en": "Built a Power BI change report that surfaces changes to space, area and organizational data over time, allowing business units to track them without manual data comparisons."
+        },
+        {
+          "de": "Delta-, Historisierungs- und Vergleichslogiken entworfen, die neue, entfallene und veränderte Datensätze automatisch identifizieren; Datenaufbereitung aus SQL-/Data-Warehouse- und Excel-Quellen standardisiert.",
+          "en": "Designed delta, historization and comparison logic that automatically identifies new, removed and changed records; standardized data preparation from SQL, data warehouse and Excel sources."
+        },
+        {
+          "de": "Rund 20 bislang unvollständig dokumentierte CAFM-Tabellen und Datenmodelle analysiert und technisch dokumentiert (inkl. Entity-Relationship-Diagrammen).",
+          "en": "Analyzed and technically documented around 20 previously under-documented CAFM tables and data models, including entity-relationship diagrams."
+        },
+        {
+          "de": "Reporting-Katalog und Power-BI-Landing-Page mit Metadatenmodell und Governance-Strukturen konzipiert; agile Zusammenarbeit mit Product Ownern, DWH, Fachbereichen und externen Partnern.",
+          "en": "Conceived a reporting catalog and Power BI landing page with metadata model and governance structures; collaborated agilely with product owners, DWH, business units and external partners."
+        }
+      ],
       "bullets": [
         {
           "tags": ["data", "product"],
@@ -147,6 +183,32 @@
       },
       "start": "04/2024",
       "end": "03/2026",
+      "portfolioTitle": {
+        "de": "Werkstudent Produktmanagement – Jelbi",
+        "en": "Working Student Product Management – Jelbi"
+      },
+      "portfolioBullets": [
+        {
+          "de": "Fraudbezogene Vorfälle um ca. 30–40 % reduziert durch datenbasierte Analyse, Optimierung bestehender Fraud-Detection-Logiken und gezielte Regelanpassungen.",
+          "en": "Reduced fraud-related incidents by approximately 30–40% through data analysis, optimization of existing fraud detection logic and targeted rule adjustments."
+        },
+        {
+          "de": "Eigenständiges Fraud Monitoring aufgebaut, neue Betrugsmuster identifiziert und daraus konkrete Gegenmaßnahmen abgeleitet.",
+          "en": "Established independent fraud monitoring, identified emerging fraud patterns and derived concrete countermeasures."
+        },
+        {
+          "de": "Verifizierungsmanagement für Nutzerkonten verantwortet und die zugehörigen Prüfprozesse weiterentwickelt.",
+          "en": "Owned verification management for user accounts and further developed the associated review processes."
+        },
+        {
+          "de": "User Feedback, Supportfälle und Nutzungsdaten ausgewertet und daraus Verbesserungen der After-Ride Experience abgeleitet.",
+          "en": "Analyzed user feedback, support cases and usage data to derive improvements to the after-ride experience."
+        },
+        {
+          "de": "2nd-Level-Support und Bug-Analyse in enger Abstimmung mit externen Software-Dienstleistern.",
+          "en": "Handled second-level support and bug analysis in close coordination with external software vendors."
+        }
+      ],
       "bullets": [
         {
           "tags": ["data", "product"],
@@ -190,6 +252,24 @@
       },
       "start": "10/2021",
       "end": "04/2024",
+      "portfolioTitle": {
+        "de": "Werkstudent – Via Consulting",
+        "en": "Working Student – Via Consulting"
+      },
+      "portfolioCompanyDisplay": {
+        "de": "ViaConsulting Inh. M. Tutkun",
+        "en": "ViaConsulting Inh. M. Tutkun"
+      },
+      "portfolioBullets": [
+        {
+          "de": "Assistenz der Geschäftsführung in operativen und organisatorischen Themen.",
+          "en": "Assisted management with operational and organisational tasks."
+        },
+        {
+          "de": "Prozesskoordination und Unterstützung bei administrativen Aufgaben.",
+          "en": "Coordinated processes and supported administrative activities."
+        }
+      ],
       "bullets": [
         {
           "tags": ["data", "product"],
@@ -213,6 +293,20 @@
       },
       "start": "10/2020",
       "end": "09/2021",
+      "portfolioTitle": {
+        "de": "Selbstständig – Tecis",
+        "en": "Self-employed – Tecis"
+      },
+      "portfolioBullets": [
+        {
+          "de": "Kundenakquise und Aufnahme von Kundendaten.",
+          "en": "Acquired new clients and recorded client data."
+        },
+        {
+          "de": "Beratung von Kund:innen auf Basis individueller Bedarfsanalysen.",
+          "en": "Provided advice based on individual customer needs."
+        }
+      ],
       "bullets": [
         {
           "tags": ["data", "product"],
@@ -233,7 +327,27 @@
         "de": "Plattform für Reparaturanfragen mit Ticketing, Matching, Chat und Bewertungen. Python, MySQL.",
         "en": "Platform for repair requests with ticketing, matching, chat and ratings. Python, MySQL."
       },
-      "link": "https://github.com/timmundt/Fix-It-Togehter"
+      "link": "https://github.com/timmundt/Fix-It-Togehter",
+      "portfolio": {
+        "order": 3,
+        "title": {
+          "de": "Full-Stack Webanwendung – „Fix It Together“",
+          "en": "Full-Stack Web Application – “Fix It Together”"
+        },
+        "description": {
+          "de": "Entwicklung einer vollständigen Full-Stack Webapplikation zur Reparaturanfrage von De’Longhi Kaffeemaschinen. Nutzer:innen können Reparaturtickets einreichen, passende Reparateur:innen auswählen und über Chat-, Bewertungs- und Filterfunktionen mit dem Service interagieren.",
+          "en": "Development of a full-stack web application enabling users to submit repair requests for De’Longhi coffee machines. The platform includes a ticketing system, repair partner selection, integrated chat, rating functionality and filtering features."
+        },
+        "tags": {
+          "de": ["Python", "MySQL", "HTML/CSS", "Full Stack"],
+          "en": ["Python", "MySQL", "HTML/CSS", "Full Stack"]
+        },
+        "linkLabel": {
+          "de": "GitHub-Repository",
+          "en": "GitHub repository"
+        },
+        "image": ""
+      }
     },
     {
       "tags": ["product"],
@@ -245,7 +359,27 @@
         "de": "API-Konzept zur Dokumenten- und Identitätsprüfung mit Fraud-Regeln und automatisierten Entscheidungen.",
         "en": "API concept for document and identity verification with fraud rules and automated decisions."
       },
-      "link": ""
+      "link": "",
+      "portfolio": {
+        "order": 1,
+        "title": {
+          "de": "Verifizierungs-API (Konzept)",
+          "en": "Verification API (concept)"
+        },
+        "description": {
+          "de": "Konzeption einer API-basierten Lösung zur Dokumenten- und Identitätsprüfung mit Fokus auf Fraud Detection, Sicherheitsmechanismen und automatisierten Entscheidungen für angebundene Systeme.",
+          "en": "Concept for an API-based solution for document and identity verification with a focus on fraud detection, security mechanisms and automated decisions for connected systems."
+        },
+        "tags": {
+          "de": ["API Design", "Fraud Prevention", "Identity Verification"],
+          "en": ["API Design", "Fraud Prevention", "Identity Verification"]
+        },
+        "note": {
+          "de": "Konzept · kein öffentliches Repository",
+          "en": "Concept · no public repository"
+        },
+        "image": ""
+      }
     },
     {
       "tags": ["data"],
@@ -257,7 +391,27 @@
         "de": "Statussignale für einen Foyer-Roboter inklusive Integration in die bestehende Systemarchitektur (ROS).",
         "en": "Status signalling for a foyer robot including integration into the existing system architecture (ROS)."
       },
-      "link": ""
+      "link": "",
+      "portfolio": {
+        "order": 2,
+        "title": {
+          "de": "Signal- & Monitoring-System (Robotikprojekt)",
+          "en": "Signal & Monitoring System (robotics project)"
+        },
+        "description": {
+          "de": "Mitarbeit in einem Hochschulprojekt zur Entwicklung eines Signal- und Monitoring-Systems für einen Foyer-Roboter (visuelle und akustische Signale, Statusanzeigen, Integration in bestehende Systemarchitektur).",
+          "en": "Participation in a university project to develop a signal and monitoring system for a foyer robot (visual and acoustic signals, status indication, integration into existing system architecture)."
+        },
+        "tags": {
+          "de": ["ROS", "Monitoring", "System Integration"],
+          "en": ["ROS", "Monitoring", "System Integration"]
+        },
+        "note": {
+          "de": "Hochschulprojekt · kein öffentliches Repository",
+          "en": "University project · no public repository"
+        },
+        "image": ""
+      }
     }
   ],
   "education": [
@@ -278,6 +432,14 @@
       "end": {
         "de": "voraussichtlich 12/2026",
         "en": "expected 12/2026"
+      },
+      "portfolioMeta": {
+        "de": "Bachelor of Science, Wirtschaftsinformatik · Apr. 2024 – voraussichtlich Dez. 2026",
+        "en": "B.Sc. Business Informatics · Apr 2024 – expected Dec 2026"
+      },
+      "portfolioText": {
+        "de": "Schwerpunkt auf praxisorientierten Wirtschafts- und IT-Prozessen.",
+        "en": "Focus on practice-oriented business and IT processes."
       }
     },
     {
@@ -294,7 +456,15 @@
         "en": "Transferred to HWR Berlin for its more practice-oriented profile."
       },
       "start": "09/2019",
-      "end": "03/2024"
+      "end": "03/2024",
+      "portfolioMeta": {
+        "de": "B.Sc. Wirtschaftsinformatik (Studienabschnitt bis zum Hochschulwechsel) · Sep. 2019 – März 2024",
+        "en": "B.Sc. Business Informatics (studies until university transfer) · Sep 2019 – Mar 2024"
+      },
+      "portfolioText": {
+        "de": "Schwerpunkt auf der Automatisierung von Geschäftsprozessen; Wechsel an die HWR Berlin zugunsten des stärker praxis- und anwendungsorientierten Profils.",
+        "en": "Focus on automation of business processes; transferred to HWR Berlin for its more practice- and application-oriented profile."
+      }
     },
     {
       "institution": {
@@ -310,7 +480,12 @@
         "en": ""
       },
       "start": "04/2019",
-      "end": "09/2019"
+      "end": "09/2019",
+      "compact": true,
+      "portfolioMeta": {
+        "de": "Bachelorstudium Informatik (1 Semester) · Apr. 2019 – Sep. 2019",
+        "en": "Bachelor studies in Computer Science (1 semester) · Apr 2019 – Sep 2019"
+      }
     },
     {
       "institution": {
@@ -326,7 +501,16 @@
         "en": "Advanced courses: Computer Science and English."
       },
       "start": "09/2012",
-      "end": "06/2018"
+      "end": "06/2018",
+      "compact": true,
+      "portfolioMeta": {
+        "de": "Allgemeine Hochschulreife · Sep. 2012 – Juni 2018",
+        "en": "General university entrance qualification (Abitur) · Sep 2012 – Jun 2018"
+      },
+      "portfolioText": {
+        "de": "Leistungskurse: Informatik und Englisch.",
+        "en": "Advanced courses: Computer Science and English."
+      }
     }
   ],
   "skills": [
@@ -337,8 +521,8 @@
         "en": "Data & BI"
       },
       "items": {
-        "de": ["Power BI", "Power Query", "SQL", "Datenmodellierung", "Data Quality", "Data Governance"],
-        "en": ["Power BI", "Power Query", "SQL", "Data modeling", "Data quality", "Data governance"]
+        "de": ["Power BI", "Power Query", "SQL", "Datenmodellierung", "Data Quality", "Data Governance", "Data Warehouse"],
+        "en": ["Power BI", "Power Query", "SQL", "Data modeling", "Data quality", "Data governance", "Data warehousing"]
       }
     },
     {
@@ -359,8 +543,8 @@
         "en": "Methods & systems"
       },
       "items": {
-        "de": ["Anforderungsmanagement", "Agile Zusammenarbeit (Jira)", "Stakeholdermanagement", "Fraud Prevention", "Archibus (CAFM)"],
-        "en": ["Requirements management", "Agile collaboration (Jira)", "Stakeholder management", "Fraud prevention", "Archibus (CAFM)"]
+        "de": ["Anforderungsmanagement", "Agile Zusammenarbeit (Jira)", "Technische Dokumentation", "Stakeholdermanagement", "Fraud Prevention", "Archibus (CAFM)"],
+        "en": ["Requirements management", "Agile collaboration (Jira)", "Technical documentation", "Stakeholder management", "Fraud prevention", "Archibus (CAFM)"]
       }
     },
     {
@@ -370,8 +554,8 @@
         "en": "Additional"
       },
       "items": {
-        "de": ["Java", "JavaScript", "HTML/CSS", "Scala", "MySQL", "ROS", "SAP"],
-        "en": ["Java", "JavaScript", "HTML/CSS", "Scala", "MySQL", "ROS", "SAP"]
+        "de": ["Java", "JavaScript", "HTML/CSS", "Scala", "MySQL", "ROS", "SAP", "Microsoft Office"],
+        "en": ["Java", "JavaScript", "HTML/CSS", "Scala", "MySQL", "ROS", "SAP", "Microsoft Office"]
       }
     }
   ],
@@ -388,5 +572,199 @@
       "English (C1)",
       "French (B1)"
     ]
+  },
+  "portfolioSkills": [
+    {
+      "category": {
+        "de": "Data & Business Intelligence",
+        "en": "Data & Business Intelligence"
+      },
+      "items": {
+        "de": ["Power BI", "Power Query", "SQL", "Datenmodellierung", "Data Quality", "Data Governance", "Data Warehouse"],
+        "en": ["Power BI", "Power Query", "SQL", "Data Modeling", "Data Quality", "Data Governance", "Data Warehousing"]
+      }
+    },
+    {
+      "category": {
+        "de": "Programmierung & Analyse",
+        "en": "Programming & Analytics"
+      },
+      "items": {
+        "de": ["Python", "pandas", "NumPy", "Plotly", "Streamlit", "Excel"],
+        "en": ["Python", "pandas", "NumPy", "Plotly", "Streamlit", "Excel"]
+      }
+    },
+    {
+      "category": {
+        "de": "Methoden & Systeme",
+        "en": "Methods & Systems"
+      },
+      "items": {
+        "de": ["Anforderungsmanagement", "Agile Zusammenarbeit (Jira)", "Technische Dokumentation", "Stakeholdermanagement", "Fraud Prevention", "Archibus (CAFM)"],
+        "en": ["Requirements management", "Agile collaboration (Jira)", "Technical documentation", "Stakeholder management", "Fraud prevention", "Archibus (CAFM)"]
+      }
+    },
+    {
+      "category": {
+        "de": "Weitere Technologien",
+        "en": "Additional technologies"
+      },
+      "items": {
+        "de": ["Java", "JavaScript", "HTML/CSS", "Scala", "MySQL", "ROS", "SAP", "Microsoft Office"],
+        "en": ["Java", "JavaScript", "HTML/CSS", "Scala", "MySQL", "ROS", "SAP", "Microsoft Office"]
+      }
+    },
+    {
+      "category": {
+        "de": "Sprachen",
+        "en": "Languages"
+      },
+      "items": {
+        "de": ["Deutsch – Muttersprache", "Türkisch – Muttersprache", "Englisch – C1", "Französisch – B1"],
+        "en": ["German – native", "Turkish – native", "English – C1", "French – B1"]
+      }
+    }
+  ],
+  "portfolio": {
+    "metaDescription": {
+      "de": "Portfolio von Denizcan Güney – Wirtschaftsinformatik, Data Excellence, Business Intelligence und Data Quality in Berlin.",
+      "en": "Portfolio of Denizcan Güney – Business Informatics, Data Excellence, Business Intelligence and Data Quality in Berlin."
+    },
+    "ogDescription": {
+      "de": "Wirtschaftsinformatik, Data Excellence, Business Intelligence und Data Quality.",
+      "en": "Business Informatics, Data Excellence, Business Intelligence and Data Quality."
+    },
+    "skipLink": {
+      "de": "Zum Hauptinhalt springen",
+      "en": "Skip to main content"
+    },
+    "navLabel": {
+      "de": "Hauptnavigation",
+      "en": "Primary navigation"
+    },
+    "logoLabel": {
+      "de": "Zur Startseite",
+      "en": "Back to top"
+    },
+    "menuToggle": {
+      "de": "Menü",
+      "en": "Menu"
+    },
+    "nav": {
+      "projects": { "de": "Projekte", "en": "Projects" },
+      "experience": { "de": "Erfahrung", "en": "Experience" },
+      "about": { "de": "Über mich", "en": "About" },
+      "skills": { "de": "Skills", "en": "Skills" },
+      "education": { "de": "Bildung", "en": "Education" },
+      "contact": { "de": "Kontakt", "en": "Contact" }
+    },
+    "hero": {
+      "kicker": {
+        "de": "Data Excellence · Business Intelligence · Data Quality",
+        "en": "Data Excellence · Business Intelligence · Data Quality"
+      },
+      "greeting": {
+        "de": "Hi, ich bin",
+        "en": "Hi, I'm"
+      },
+      "subtitle": {
+        "de": "Bachelorstudent der Wirtschaftsinformatik an der HWR Berlin. Ich arbeite an der Schnittstelle von Daten, BI und IT-gestützten Prozessen – mit Erfahrung in Data Quality, Reporting und datengetriebenem Produktmanagement.",
+        "en": "Business Informatics student at HWR Berlin. I work at the intersection of data, BI and IT-driven processes — with experience in data quality, reporting and data-driven product management."
+      },
+      "cvButton": { "de": "Lebenslauf ansehen", "en": "View résumé" },
+      "projectsButton": { "de": "Projekte ansehen", "en": "View projects" }
+    },
+    "projectsSection": {
+      "title": { "de": "Projekte (Auswahl)", "en": "Projects (selection)" },
+      "intro": {
+        "de": "Eine Auswahl an Konzepten und Anwendungen, die meine Arbeit an der Schnittstelle von Daten, Produkt und Prozessen zeigen.",
+        "en": "A selection of concepts and applications that reflect my work at the intersection of data, products and processes."
+      },
+      "tagsLabel": {
+        "de": "Technologien und Themen",
+        "en": "Technologies and topics"
+      },
+      "tagsLabelTech": {
+        "de": "Technologien",
+        "en": "Technologies"
+      }
+    },
+    "experienceSection": {
+      "title": { "de": "Berufserfahrung", "en": "Experience" }
+    },
+    "aboutSection": {
+      "title": { "de": "Über mich", "en": "About me" },
+      "paragraphs": [
+        {
+          "de": "Ich studiere Wirtschaftsinformatik an der Hochschule für Wirtschaft und Recht Berlin und absolviere aktuell ein Pflichtpraktikum bei der Robert Bosch GmbH im Bereich Data Excellence / Business Intelligence. Dort entwickle ich Data-Quality-Monitoring, historisierte Analysen und Power-BI-Reporting für CAFM- und Unternehmensdaten.",
+          "en": "I am a Business Informatics student at HWR Berlin and currently completing a mandatory internship at Robert Bosch GmbH in Data Excellence / Business Intelligence. There I develop data quality monitoring, historized analyses and Power BI reporting for CAFM and enterprise data."
+        },
+        {
+          "de": "Zuvor war ich im Produktmanagement bei Jelbi (BVG) tätig und arbeitete an Fraud Monitoring sowie datengetriebenen Produktoptimierungen. Ich verbinde technische und wirtschaftliche Perspektiven und interessiere mich besonders für Data Quality, BI, effiziente Prozesse und datenbasierte Entscheidungen.",
+          "en": "Previously, I worked in product management at Jelbi (BVG), focusing on fraud monitoring and data-driven product improvements. I combine technical and business perspectives and am particularly interested in data quality, BI, efficient processes and data-driven decisions."
+        }
+      ],
+      "profileCard": {
+        "title": { "de": "Profil", "en": "Profile" },
+        "location": { "de": "Standort", "en": "Location" },
+        "locationValue": { "de": "Berlin", "en": "Berlin" },
+        "role": { "de": "Rolle", "en": "Role" },
+        "roleValue": {
+          "de": "Praktikant – Bosch (Data Excellence / BI)",
+          "en": "Intern – Bosch (Data Excellence / BI)"
+        },
+        "studies": { "de": "Studium", "en": "Studies" },
+        "studiesValue": {
+          "de": "B.Sc. Wirtschaftsinformatik, HWR Berlin",
+          "en": "B.Sc. Business Informatics, HWR Berlin"
+        },
+        "availability": { "de": "Verfügbar ab", "en": "Available from" },
+        "email": { "de": "E-Mail", "en": "Email" }
+      },
+      "cvVariants": {
+        "intro": {
+          "de": "Rollenspezifische Lebensläufe:",
+          "en": "Role-specific résumés:"
+        },
+        "data": {
+          "de": "Data-fokussierter Lebenslauf",
+          "en": "Data-focused résumé"
+        },
+        "product": {
+          "de": "Product-fokussierter Lebenslauf",
+          "en": "Product-focused résumé"
+        }
+      }
+    },
+    "skillsSection": {
+      "title": { "de": "Skills", "en": "Skills" }
+    },
+    "educationSection": {
+      "title": { "de": "Bildungsweg", "en": "Education" }
+    },
+    "contactSection": {
+      "title": { "de": "Kontakt", "en": "Contact" },
+      "text": {
+        "de": "Für Bewerbungsanfragen, Rückfragen oder Projektideen freue ich mich über eine Nachricht. Weitere Unterlagen wie Zeugnisse oder eine ausführlichere Projektübersicht sende ich auf Anfrage gerne zu.",
+        "en": "For job opportunities, questions or project ideas, I would be happy to hear from you. I can provide additional documents such as certificates or a more detailed project overview on request."
+      },
+      "button": { "de": "E-Mail schreiben", "en": "Send an email" },
+      "infoTitle": { "de": "Kontaktinformationen", "en": "Contact details" },
+      "phone": { "de": "Telefon", "en": "Phone" }
+    },
+    "footer": {
+      "note": {
+        "de": "Portfolio-Seite für Bewerbungen und Projekte.",
+        "en": "Portfolio website for applications and projects."
+      },
+      "cvVariants": {
+        "data": { "de": "Data-Lebenslauf", "en": "Data résumé" },
+        "product": { "de": "Product-Lebenslauf", "en": "Product résumé" }
+      }
+    },
+    "jobTitle": {
+      "de": "Wirtschaftsinformatik-Student – Data Excellence / Business Intelligence",
+      "en": "Business Informatics Student – Data Excellence / Business Intelligence"
+    }
   }
 }

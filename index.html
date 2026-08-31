@@ -10,12 +10,34 @@
   <meta property="og:description" content="Wirtschaftsinformatik, Data Excellence, Business Intelligence und Data Quality." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://denizcangueney.de/" />
+  <meta property="og:image" content="https://denizcangueney.de/og-image.svg" />
   <meta property="og:locale" content="de_DE" />
   <meta property="og:locale:alternate" content="en_GB" />
   <link rel="canonical" href="https://denizcangueney.de/" />
+  <link rel="alternate" hreflang="de" href="https://denizcangueney.de/" />
+  <link rel="alternate" hreflang="en" href="https://denizcangueney.de/en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://denizcangueney.de/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <title>Denizcan Güney – Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Denizcan Güney",
+    "url": "https://denizcangueney.de/",
+    "jobTitle": "Wirtschaftsinformatik-Student – Data Excellence / Business Intelligence",
+    "email": "denizcan.gueney@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/denizcangueney"
+    ]
+  }
+  </script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
@@ -26,7 +48,8 @@
         <span class="logo-mark">DG</span>
         <span class="logo-text">Denizcan Güney</span>
       </a>
-      <nav class="nav" aria-label="Hauptnavigation">
+      <button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="site-nav">Menü</button>
+      <nav id="site-nav" class="nav" aria-label="Hauptnavigation">
         <a href="#projects">Projekte</a>
         <a href="#experience">Erfahrung</a>
         <a href="#about">Über mich</a>
@@ -42,16 +65,13 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
           <p class="hero-kicker">Data Excellence · Business Intelligence · Data Quality</p>
           <h1>Hi, ich bin <span class="accent">Denizcan Güney</span>.</h1>
           <p class="hero-subtitle">
-            Bachelorstudent der Wirtschaftsinformatik an der HWR Berlin.
-            Ich arbeite an der Schnittstelle von Daten, BI und IT-gestützten Prozessen –
-            mit Erfahrung in Data Quality, Reporting und datengetriebenem Produktmanagement.
+            Bachelorstudent der Wirtschaftsinformatik an der HWR Berlin. Ich arbeite an der Schnittstelle von Daten, BI und IT-gestützten Prozessen – mit Erfahrung in Data Quality, Reporting und datengetriebenem Produktmanagement.
           </p>
           <div class="hero-actions">
             <a href="cv.html" class="btn primary">
@@ -63,7 +83,6 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
       <div class="container section-inner">
         <h2>Projekte (Auswahl)</h2>
@@ -74,8 +93,7 @@
           <article class="card project-card">
             <h3>Verifizierungs-API (Konzept)</h3>
             <p>
-              Konzeption einer API-basierten Lösung zur Dokumenten- und Identitätsprüfung mit Fokus auf Fraud Detection,
-              Sicherheitsmechanismen und automatisierten Entscheidungen für angebundene Systeme.
+              Konzeption einer API-basierten Lösung zur Dokumenten- und Identitätsprüfung mit Fokus auf Fraud Detection, Sicherheitsmechanismen und automatisierten Entscheidungen für angebundene Systeme.
             </p>
             <ul class="tag-list project-tags" aria-label="Technologien und Themen">
               <li>API Design</li>
@@ -88,10 +106,9 @@
           </article>
 
           <article class="card project-card">
-            <h3>Signal- & Monitoring-System (Robotikprojekt)</h3>
+            <h3>Signal- &amp; Monitoring-System (Robotikprojekt)</h3>
             <p>
-              Mitarbeit in einem Hochschulprojekt zur Entwicklung eines Signal- und Monitoring-Systems für einen Foyer-Roboter
-              (visuelle und akustische Signale, Statusanzeigen, Integration in bestehende Systemarchitektur).
+              Mitarbeit in einem Hochschulprojekt zur Entwicklung eines Signal- und Monitoring-Systems für einen Foyer-Roboter (visuelle und akustische Signale, Statusanzeigen, Integration in bestehende Systemarchitektur).
             </p>
             <ul class="tag-list project-tags" aria-label="Technologien und Themen">
               <li>ROS</li>
@@ -106,10 +123,7 @@
           <article class="card project-card">
             <h3>Full-Stack Webanwendung – „Fix It Together“</h3>
             <p>
-              Entwicklung einer vollständigen Full-Stack Webapplikation zur Reparaturanfrage von
-              De’Longhi Kaffeemaschinen. Nutzer:innen können Reparaturtickets einreichen, passende
-              Reparateur:innen auswählen und über Chat-, Bewertungs- und Filterfunktionen mit dem
-              Service interagieren.
+              Entwicklung einer vollständigen Full-Stack Webapplikation zur Reparaturanfrage von De’Longhi Kaffeemaschinen. Nutzer:innen können Reparaturtickets einreichen, passende Reparateur:innen auswählen und über Chat-, Bewertungs- und Filterfunktionen mit dem Service interagieren.
             </p>
             <ul class="tag-list project-tags" aria-label="Technologien">
               <li>Python</li>
@@ -127,7 +141,6 @@
       </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="section">
       <div class="container section-inner">
         <h2>Berufserfahrung</h2>
@@ -149,7 +162,7 @@
           <article class="timeline-item">
             <div class="timeline-header">
               <h3>Werkstudent Produktmanagement – Jelbi</h3>
-              <span class="timeline-meta">Berliner Verkehrsbetriebe (BVG) · Apr. 2024 – März 2026 · Berlin</span>
+              <span class="timeline-meta">Berliner Verkehrsbetriebe (BVG) – Jelbi · Apr. 2024 – März 2026 · Berlin</span>
             </div>
             <ul>
               <li>Fraudbezogene Vorfälle um ca. 30–40 % reduziert durch datenbasierte Analyse, Optimierung bestehender Fraud-Detection-Logiken und gezielte Regelanpassungen.</li>
@@ -163,7 +176,7 @@
           <article class="timeline-item">
             <div class="timeline-header">
               <h3>Werkstudent – Via Consulting</h3>
-              <span class="timeline-meta">Okt. 2021 – Apr. 2024 · Berlin</span>
+              <span class="timeline-meta">ViaConsulting Inh. M. Tutkun · Okt. 2021 – Apr. 2024 · Berlin</span>
             </div>
             <ul>
               <li>Assistenz der Geschäftsführung in operativen und organisatorischen Themen.</li>
@@ -174,7 +187,7 @@
           <article class="timeline-item">
             <div class="timeline-header">
               <h3>Selbstständig – Tecis</h3>
-              <span class="timeline-meta">Okt. 2020 – Sep. 2021 · Berlin</span>
+              <span class="timeline-meta">Tecis · Okt. 2020 – Sep. 2021 · Berlin</span>
             </div>
             <ul>
               <li>Kundenakquise und Aufnahme von Kundendaten.</li>
@@ -185,7 +198,6 @@
       </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
       <div class="container section-inner two-columns">
         <div>
@@ -203,14 +215,19 @@
             <li><span>Standort</span><span>Berlin</span></li>
             <li><span>Rolle</span><span>Praktikant – Bosch (Data Excellence / BI)</span></li>
             <li><span>Studium</span><span>B.Sc. Wirtschaftsinformatik, HWR Berlin</span></li>
-            <li><span>Verfügbar ab</span><span>Okt. 2026 · Abschluss voraussichtlich Dez. 2026</span></li>
+            <li><span>Verfügbar ab</span><span>10/2026 · Studienabschluss voraussichtlich 12/2026</span></li>
             <li><span>E-Mail</span><span><a href="mailto:denizcan.gueney@gmail.com">denizcan.gueney@gmail.com</a></span></li>
           </ul>
+          <p class="info-card-links">
+            Rollenspezifische Lebensläufe:
+            <a href="cv-data.html">Data-fokussierter Lebenslauf</a>
+            ·
+            <a href="cv-product.html">Product-fokussierter Lebenslauf</a>
+          </p>
         </aside>
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section">
       <div class="container section-inner">
         <h2>Skills</h2>
@@ -279,7 +296,6 @@
       </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="section">
       <div class="container section-inner">
         <h2>Bildungsweg</h2>
@@ -310,14 +326,12 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
       <div class="container section-inner two-columns">
         <div>
           <h2>Kontakt</h2>
           <p>
-            Für Bewerbungsanfragen, Rückfragen oder Projektideen freue ich mich über eine Nachricht.
-            Weitere Unterlagen wie Zeugnisse oder eine ausführlichere Projektübersicht sende ich auf Anfrage gerne zu.
+            Für Bewerbungsanfragen, Rückfragen oder Projektideen freue ich mich über eine Nachricht. Weitere Unterlagen wie Zeugnisse oder eine ausführlichere Projektübersicht sende ich auf Anfrage gerne zu.
           </p>
           <a href="mailto:denizcan.gueney@gmail.com" class="btn primary">E-Mail schreiben</a>
         </div>
@@ -337,11 +351,30 @@
     <div class="container footer-inner">
       <span>© <span id="year"></span> Denizcan Güney</span>
       <span class="footer-note">Portfolio-Seite für Bewerbungen und Projekte.</span>
+      <span class="footer-cv-links">
+        <a href="cv-data.html">Data-Lebenslauf</a>
+        ·
+        <a href="cv-product.html">Product-Lebenslauf</a>
+      </span>
     </div>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      (function () {
+        var toggle = document.querySelector(".nav-menu-toggle");
+        var nav = document.getElementById("site-nav");
+        if (!toggle || !nav) return;
+        toggle.addEventListener("click", function () {
+          var open = nav.classList.toggle("is-open");
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        nav.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            nav.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      })();
     </script>
   </footer>
 </body>
 </html>
-

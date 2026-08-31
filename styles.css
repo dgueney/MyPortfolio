@@ -157,6 +157,70 @@ body {
   width: 100%;
 }
 
+.nav-link-external::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+
+.nav-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.nav-menu-toggle:hover {
+  border-color: #6b7280;
+}
+
+.info-card-links {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.info-card-links a {
+  color: var(--text-soft);
+  text-decoration: none;
+}
+
+.info-card-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 0.15rem);
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border);
+}
+
+.footer-cv-links {
+  font-size: 0.85rem;
+}
+
+.footer-cv-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-cv-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .skip-link {
   position: absolute;
   top: -4rem;
@@ -501,27 +565,45 @@ a:hover {
   }
 
   .header-inner {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     gap: 0.75rem;
+    position: relative;
   }
 
   .logo {
     align-self: flex-start;
   }
 
+  .nav-menu-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
   .nav {
+    display: none;
     width: 100%;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding: 0.15rem 0 0.3rem;
-    scrollbar-width: thin;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+    padding: 0.75rem 0 0.15rem;
+    overflow: visible;
+    white-space: normal;
+  }
+
+  .nav.is-open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 0.45rem 0.25rem;
   }
 
   .lang-switch {
     margin-left: 0;
+    align-self: flex-start;
   }
 
   .section {
@@ -546,6 +628,8 @@ a:hover {
   }
 
   .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
   }
