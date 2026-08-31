@@ -91,17 +91,24 @@
         </p>
         <div class="grid-2">
           <article class="card project-card">
-            <h3>Verifizierungs-API (Konzept)</h3>
+            <h3>Identitätsverifizierungs-Plattform (in Entwicklung)</h3>
             <p>
-              Konzeption einer API-basierten Lösung zur Dokumenten- und Identitätsprüfung mit Fokus auf Fraud Detection, Sicherheitsmechanismen und automatisierten Entscheidungen für angebundene Systeme.
+              B2B-Dienst zur Identitätsprüfung: Unternehmen steuern KYC-ähnliche Dokumenten- und Biometrie-Checks über eine API, statt die Pipeline selbst zu bauen. Klienten senden Ausweisdokumente und ein Selfie (inkl. Live-Kamera auf Web und Mobile); die Plattform extrahiert Dokumentdaten, prüft die MRZ, wendet Qualitäts- und Fraud-Heuristiken an, vergleicht Dokumentfoto und Selfie und liefert eine strukturierte Entscheidung (Freigabe, Ablehnung, erneuter Versuch oder manuelle Prüfung), optional per Webhook. Operatoren erhalten ein tenant-bezogenes Dashboard für Sessions, API-Keys, Audit-Historie und DSGVO-Export/Löschung.
             </p>
-            <ul class="tag-list project-tags" aria-label="Technologien und Themen">
-              <li>API Design</li>
-              <li>Fraud Prevention</li>
-              <li>Identity Verification</li>
+            <p>
+              Modularer API-Kern mit Decision Pipeline (Dokumentanalyse → Biometrie → Verdict), Web-Dashboard und Capture-Clients. Multi-Tenant: Daten, Keys und Medien bleiben je Kunde isoliert. Privacy-first: verschlüsselte Speicherung, Aufbewahrung/Löschung und Audit-Logs ohne Roh-PII in operativen Ausgaben.
+            </p>
+            <ul class="tag-list project-tags" aria-label="Technologien">
+              <li>Python</li>
+              <li>PostgreSQL</li>
+              <li>React</li>
+              <li>React Native</li>
+              <li>Docker</li>
+              <li>OCR / Computer Vision</li>
+              <li>API</li>
             </ul>
             <div class="project-links">
-              <span class="project-note">Konzept · kein öffentliches Repository</span>
+              <span class="project-note">In Entwicklung · privates Repository</span>
             </div>
           </article>
 

@@ -81,11 +81,14 @@ function renderProjects(lang) {
               </a>`
         : `              <span class="project-note">${escapeHtml(t(pf.note, lang))}</span>`;
 
+      const descriptionHtml = String(t(pf.description, lang))
+        .split(/\n\n+/)
+        .map((para) => `            <p>\n              ${escapeHtml(para.trim())}\n            </p>`)
+        .join("\n");
+
       return `          <article class="card project-card">
 ${imageHtml}            <h3>${escapeHtml(t(pf.title, lang))}</h3>
-            <p>
-              ${escapeHtml(t(pf.description, lang))}
-            </p>
+${descriptionHtml}
             <ul class="tag-list project-tags" aria-label="${escapeHtml(tagsLabel)}">
 ${renderTagList(tags)}
             </ul>

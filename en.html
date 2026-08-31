@@ -91,17 +91,24 @@
         </p>
         <div class="grid-2">
           <article class="card project-card">
-            <h3>Verification API (concept)</h3>
+            <h3>Identity Verification Platform (in development)</h3>
             <p>
-              Concept for an API-based solution for document and identity verification with a focus on fraud detection, security mechanisms and automated decisions for connected systems.
+              A B2B identity verification service that lets companies run KYC-style document and biometric checks through an API instead of building that pipeline themselves. Clients send ID documents and a selfie (including live camera capture on web and mobile). The platform extracts document data, checks the machine-readable zone, runs quality and fraud heuristics, compares the document photo to the selfie, and returns a structured decision: approve, decline, retry, or send to manual review. Results can also be delivered asynchronously via webhooks. Operators get a tenant-scoped dashboard for sessions, API keys, audit history, and GDPR-style export/erasure.
             </p>
-            <ul class="tag-list project-tags" aria-label="Technologies and topics">
-              <li>API Design</li>
-              <li>Fraud Prevention</li>
-              <li>Identity Verification</li>
+            <p>
+              Modular API core with a decision pipeline (document analysis → biometric checks → final verdict), a web dashboard for operators, and capture clients for browser and mobile. Multi-tenant by design: data, keys, and media stay isolated per customer. Privacy-first: encrypted storage, retention/deletion, and audit logs without raw PII in operational output.
+            </p>
+            <ul class="tag-list project-tags" aria-label="Technologies">
+              <li>Python</li>
+              <li>PostgreSQL</li>
+              <li>React</li>
+              <li>React Native</li>
+              <li>Docker</li>
+              <li>OCR / Computer Vision</li>
+              <li>API</li>
             </ul>
             <div class="project-links">
-              <span class="project-note">Concept · no public repository</span>
+              <span class="project-note">In development · private repository</span>
             </div>
           </article>
 

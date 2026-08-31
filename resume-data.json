@@ -350,33 +350,33 @@
       }
     },
     {
-      "tags": ["product"],
+      "tags": ["data", "product"],
       "name": {
-        "de": "Verifizierungs-API (Konzept)",
-        "en": "Verification API (concept)"
+        "de": "Identitätsverifizierungs-Plattform (in Entwicklung)",
+        "en": "Identity Verification Platform (in development)"
       },
       "description": {
-        "de": "API-Konzept zur Dokumenten- und Identitätsprüfung mit Fraud-Regeln und automatisierten Entscheidungen.",
-        "en": "API concept for document and identity verification with fraud rules and automated decisions."
+        "de": "B2B-API zur Identitätsprüfung – Dokumenten-OCR, biometrischer Abgleich und Decision Engine, mit Operator-Dashboard und Live-Capture auf Web und Mobile.",
+        "en": "B2B identity verification API — document OCR, biometric matching, and a decision engine, with an operator dashboard and live capture on web and mobile."
       },
       "link": "",
       "portfolio": {
         "order": 1,
         "title": {
-          "de": "Verifizierungs-API (Konzept)",
-          "en": "Verification API (concept)"
+          "de": "Identitätsverifizierungs-Plattform (in Entwicklung)",
+          "en": "Identity Verification Platform (in development)"
         },
         "description": {
-          "de": "Konzeption einer API-basierten Lösung zur Dokumenten- und Identitätsprüfung mit Fokus auf Fraud Detection, Sicherheitsmechanismen und automatisierten Entscheidungen für angebundene Systeme.",
-          "en": "Concept for an API-based solution for document and identity verification with a focus on fraud detection, security mechanisms and automated decisions for connected systems."
+          "de": "B2B-Dienst zur Identitätsprüfung: Unternehmen steuern KYC-ähnliche Dokumenten- und Biometrie-Checks über eine API, statt die Pipeline selbst zu bauen. Klienten senden Ausweisdokumente und ein Selfie (inkl. Live-Kamera auf Web und Mobile); die Plattform extrahiert Dokumentdaten, prüft die MRZ, wendet Qualitäts- und Fraud-Heuristiken an, vergleicht Dokumentfoto und Selfie und liefert eine strukturierte Entscheidung (Freigabe, Ablehnung, erneuter Versuch oder manuelle Prüfung), optional per Webhook. Operatoren erhalten ein tenant-bezogenes Dashboard für Sessions, API-Keys, Audit-Historie und DSGVO-Export/Löschung.\n\nModularer API-Kern mit Decision Pipeline (Dokumentanalyse → Biometrie → Verdict), Web-Dashboard und Capture-Clients. Multi-Tenant: Daten, Keys und Medien bleiben je Kunde isoliert. Privacy-first: verschlüsselte Speicherung, Aufbewahrung/Löschung und Audit-Logs ohne Roh-PII in operativen Ausgaben.",
+          "en": "A B2B identity verification service that lets companies run KYC-style document and biometric checks through an API instead of building that pipeline themselves. Clients send ID documents and a selfie (including live camera capture on web and mobile). The platform extracts document data, checks the machine-readable zone, runs quality and fraud heuristics, compares the document photo to the selfie, and returns a structured decision: approve, decline, retry, or send to manual review. Results can also be delivered asynchronously via webhooks. Operators get a tenant-scoped dashboard for sessions, API keys, audit history, and GDPR-style export/erasure.\n\nModular API core with a decision pipeline (document analysis → biometric checks → final verdict), a web dashboard for operators, and capture clients for browser and mobile. Multi-tenant by design: data, keys, and media stay isolated per customer. Privacy-first: encrypted storage, retention/deletion, and audit logs without raw PII in operational output."
         },
         "tags": {
-          "de": ["API Design", "Fraud Prevention", "Identity Verification"],
-          "en": ["API Design", "Fraud Prevention", "Identity Verification"]
+          "de": ["Python", "PostgreSQL", "React", "React Native", "Docker", "OCR / Computer Vision", "API"],
+          "en": ["Python", "PostgreSQL", "React", "React Native", "Docker", "OCR / Computer Vision", "API"]
         },
         "note": {
-          "de": "Konzept · kein öffentliches Repository",
-          "en": "Concept · no public repository"
+          "de": "In Entwicklung · privates Repository",
+          "en": "In development · private repository"
         },
         "image": ""
       }
