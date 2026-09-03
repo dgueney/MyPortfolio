@@ -103,41 +103,57 @@ body {
 }
 
 .cv-header {
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.55rem;
-  border-bottom: 1px solid var(--cv-border);
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1.5px solid var(--cv-heading);
+}
+
+.cv-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem 1.25rem;
 }
 
 .cv-header h1 {
   margin: 0;
   color: var(--cv-heading);
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   line-height: 1.1;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
 }
 
 .cv-headline {
-  margin: 0.12rem 0 0.3rem;
-  font-size: 0.95rem;
+  margin: 0.08rem 0 0.22rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--cv-accent-strong);
 }
 
 .cv-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   margin: 0;
+  padding: 0;
+  list-style: none;
   color: var(--cv-muted);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
+}
+
+.cv-contact li:not(:last-child)::after {
+  content: "·";
+  margin: 0 0.45rem;
+  color: var(--cv-muted);
 }
 
 .cv-availability {
-  display: inline-block;
-  margin: 0.2rem 0 0;
-  padding: 0.08rem 0.4rem;
-  border-radius: 999px;
-  background: var(--cv-accent-soft);
+  margin: 0;
   color: var(--cv-accent-strong);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .cv-contact a {
@@ -150,14 +166,14 @@ body {
 }
 
 .cv-section {
-  margin-top: 0.8rem;
+  margin-top: 0.55rem;
 }
 
 .cv-section > h2 {
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.28rem;
   color: var(--cv-accent-strong);
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -176,8 +192,8 @@ body {
 }
 
 .cv-section--profile {
-  margin-top: 0.7rem;
-  padding: 0.5rem 0.65rem;
+  margin-top: 0.45rem;
+  padding: 0.35rem 0.55rem;
   border-left: 3px solid var(--cv-accent);
   background: var(--cv-accent-soft);
 }
@@ -191,13 +207,20 @@ body {
 }
 
 .cv-entry {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.42rem;
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
 .cv-entry--compact {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.18rem;
+}
+
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem 1rem;
 }
 
 .cv-entry h3 {
@@ -205,6 +228,15 @@ body {
   color: var(--cv-heading);
   font-size: 0.95rem;
   line-height: 1.25;
+}
+
+.cv-dates {
+  margin: 0;
+  flex-shrink: 0;
+  color: var(--cv-muted);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .cv-entry > p {
@@ -242,7 +274,7 @@ body {
 }
 
 .cv-section--projects .cv-entry {
-  padding: 0.3rem 0.5rem;
+  padding: 0.22rem 0.45rem;
   border-left: 2px solid var(--cv-accent);
   background: #f8fafc;
 }
@@ -264,7 +296,7 @@ body {
   grid-template-columns: 30mm 1fr;
   gap: 0.35rem;
   margin: 0;
-  padding: 0.18rem 0;
+  padding: 0.1rem 0;
   border-bottom: 1px solid #eef2f6;
   break-inside: avoid;
   page-break-inside: avoid;
@@ -286,14 +318,34 @@ body {
     padding: 1.25rem 1rem;
   }
 
+  .cv-header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.12rem;
+  }
+
   .cv-header h1 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
+  }
+
+  .cv-availability {
+    text-align: left;
+    white-space: normal;
+  }
+
+  .cv-entry-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.05rem;
   }
 
   .cv-contact {
-    display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.15rem;
+  }
+
+  .cv-contact li:not(:last-child)::after {
+    display: none;
   }
 
   .cv-skill-row {
@@ -308,14 +360,14 @@ body {
 
 @page {
   size: A4;
-  margin: 12mm 14mm;
+  margin: 8mm 11mm;
 }
 
 @media print {
   body {
     background: #fff;
-    font-size: 10pt;
-    line-height: 1.3;
+    font-size: 9.2pt;
+    line-height: 1.25;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -332,6 +384,47 @@ body {
     box-shadow: none;
   }
 
+  .cv-header {
+    margin-bottom: 0.32rem;
+    padding-bottom: 0.22rem;
+  }
+
+  .cv-header h1 {
+    font-size: 1.32rem;
+  }
+
+  .cv-section {
+    margin-top: 0.35rem;
+    break-inside: auto;
+  }
+
+  .cv-section--profile {
+    margin-top: 0.32rem;
+    padding: 0.25rem 0.45rem;
+  }
+
+  .cv-entry {
+    margin-bottom: 0.28rem;
+  }
+
+  .cv-entry--compact {
+    margin-bottom: 0.1rem;
+  }
+
+  .cv-entry li {
+    margin-bottom: 0.04rem;
+  }
+
+  .cv-skill-row {
+    padding: 0.05rem 0;
+  }
+
+  .cv-header-top,
+  .cv-entry-head {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
   a {
     text-decoration: none !important;
   }
@@ -342,11 +435,8 @@ body {
     page-break-inside: avoid;
   }
 
-  .cv-section {
-    break-inside: auto;
-  }
-
   .cv-section > h2 {
+    margin-bottom: 0.18rem;
     break-after: avoid;
     page-break-after: avoid;
   }

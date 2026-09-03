@@ -42,11 +42,19 @@ function limit(entries, max) {
   return max > 0 ? entries.slice(0, max) : entries;
 }
 
+function websiteLabel(url) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return String(url).replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+  }
+}
+
 function renderPeriod(entry, lang, labels) {
   const start = escapeHtml(t(entry.start, lang));
   const end = escapeHtml(t(entry.end, lang));
   const ongoing = entry.ongoing ? ` (${escapeHtml(labels.ongoing)})` : "";
-  return `<time>${start}</time> – <time>${end}</time>${ongoing}`;
+  return `<time>${start}</time> ${escapeHtml(labels.periodSep)} <time>${end}</time>${ongoing}`;
 }
 
 function renderExperience(lang, profile, labels) {
@@ -63,8 +71,11 @@ function renderExperience(lang, profile, labels) {
         .join("\n");
 
       return `      <article class="cv-entry">
-        <h3>${escapeHtml(t(job.title, lang))}</h3>
-        <p class="cv-meta"><span class="cv-org">${escapeHtml(t(job.company, lang))}</span> · ${renderPeriod(job, lang, labels)} · ${escapeHtml(t(job.location, lang))}</p>
+        <div class="cv-entry-head">
+          <h3>${escapeHtml(t(job.title, lang))}</h3>
+          <p class="cv-dates">${renderPeriod(job, lang, labels)}</p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">${escapeHtml(t(job.company, lang))}</span> · ${escapeHtml(t(job.location, lang))}</p>
         <ul>
 ${items}
         </ul>
@@ -102,8 +113,11 @@ function renderEducation(lang, labels) {
       const detailsHtml = details ? ` · ${escapeHtml(details)}` : "";
 
       return `      <article class="cv-entry cv-entry--compact">
-        <h3>${escapeHtml(t(edu.institution, lang))}</h3>
-        <p class="cv-meta">${escapeHtml(t(edu.degree, lang))} · ${renderPeriod(edu, lang, labels)}${detailsHtml}</p>
+        <div class="cv-entry-head">
+          <h3>${escapeHtml(t(edu.institution, lang))}</h3>
+          <p class="cv-dates">${renderPeriod(edu, lang, labels)}</p>
+        </div>
+        <p class="cv-meta">${escapeHtml(t(edu.degree, lang))}${detailsHtml}</p>
       </article>`;
     })
     .join("\n");
@@ -168,16 +182,17 @@ ${projects}
 
   <main id="cv-main" class="cv-page">
     <header class="cv-header">
-      <h1>${escapeHtml(data.name)}</h1>
+      <div class="cv-header-top">
+        <h1>${escapeHtml(data.name)}</h1>
+        <p class="cv-availability">${escapeHtml(t(data.availability, lang))}</p>
+      </div>
       <p class="cv-headline">${escapeHtml(t(profileConfig.headline, lang))}</p>
-      <p class="cv-contact">
-        <a href="mailto:${escapeHtml(data.email)}">${escapeHtml(data.email)}</a>
-        · <a href="tel:${escapeHtml(data.phoneHref)}">${escapeHtml(data.phone)}</a>
-        · ${escapeHtml(t(data.location, lang))}
-        · <a href="${escapeHtml(data.linkedin)}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        · <a href="${escapeHtml(data.website)}" target="_blank" rel="noopener noreferrer">denizcangueney.de</a>
-      </p>
-      <p class="cv-availability">${escapeHtml(t(data.availability, lang))}</p>
+      <ul class="cv-contact">
+        <li><a href="mailto:${escapeHtml(data.email)}">${escapeHtml(data.email)}</a></li>
+        <li><a href="tel:${escapeHtml(data.phoneHref)}">${escapeHtml(data.phone)}</a></li>
+        <li>${escapeHtml(t(data.location, lang))}</li>
+        <li><a href="${escapeHtml(data.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(websiteLabel(data.website))}</a></li>
+      </ul>
     </header>
 
     <section class="cv-section cv-section--profile" aria-labelledby="summary-heading">

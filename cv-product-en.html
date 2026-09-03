@@ -21,16 +21,17 @@
 
   <main id="cv-main" class="cv-page">
     <header class="cv-header">
-      <h1>Denizcan Güney</h1>
-      <p class="cv-headline">B.Sc. Business Informatics Student – Product / Business Analyst</p>
-      <p class="cv-contact">
-        <a href="mailto:denizcan.gueney@gmail.com">denizcan.gueney@gmail.com</a>
-        · <a href="tel:+4917670815328">+49 176 70815328</a>
-        · Berlin, Germany
-        · <a href="https://www.linkedin.com/in/denizcangueney" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        · <a href="https://denizcangueney.de/" target="_blank" rel="noopener noreferrer">denizcangueney.de</a>
-      </p>
-      <p class="cv-availability">Available from 10/2026 · degree expected 12/2026</p>
+      <div class="cv-header-top">
+        <h1>Denizcan Güney</h1>
+        <p class="cv-availability">Available from 10/2026 · degree expected 12/2026</p>
+      </div>
+      <p class="cv-headline">B.Sc. Business Informatics Student · Product / Business Analyst</p>
+      <ul class="cv-contact">
+        <li><a href="mailto:denizcan.gueney@gmail.com">denizcan.gueney@gmail.com</a></li>
+        <li><a href="tel:+4917670815328">+49 176 70815328</a></li>
+        <li>Berlin, Germany</li>
+        <li><a href="https://denizcangueney.de/" target="_blank" rel="noopener noreferrer">denizcangueney.de</a></li>
+      </ul>
     </header>
 
     <section class="cv-section cv-section--profile" aria-labelledby="summary-heading">
@@ -42,8 +43,11 @@
       <h2 id="experience-heading">Experience</h2>
 
       <article class="cv-entry">
-        <h3>Internship Data Excellence / Business Intelligence</h3>
-        <p class="cv-meta"><span class="cv-org">Robert Bosch GmbH</span> · <time>04/2026</time> – <time>09/2026</time> (ongoing) · Berlin</p>
+        <div class="cv-entry-head">
+          <h3>Internship Data Excellence / Business Intelligence</h3>
+          <p class="cv-dates"><time>04/2026</time> to <time>09/2026</time> (ongoing)</p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">Robert Bosch GmbH</span> · Berlin</p>
         <ul>
           <li>Built a Python data quality monitoring framework that automates validation, scoring and historization of CAFM data, replacing manual checks.</li>
           <li>Created a Power BI change report that makes changes to space, area and organizational data traceable without manual comparisons.</li>
@@ -53,8 +57,11 @@
       </article>
 
       <article class="cv-entry">
-        <h3>Working Student Product Management</h3>
-        <p class="cv-meta"><span class="cv-org">Berliner Verkehrsbetriebe (BVG) – Jelbi</span> · <time>04/2024</time> – <time>03/2026</time> · Berlin</p>
+        <div class="cv-entry-head">
+          <h3>Working Student Product Management</h3>
+          <p class="cv-dates"><time>04/2024</time> to <time>03/2026</time></p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">Berliner Verkehrsbetriebe (BVG), Jelbi</span> · Berlin</p>
         <ul>
           <li>Reduced fraud-related incidents by roughly 30–40% by optimizing fraud detection logic and adjusting rules.</li>
           <li>Established independent fraud monitoring, identified new fraud patterns and derived countermeasures.</li>
@@ -64,16 +71,22 @@
       </article>
 
       <article class="cv-entry">
-        <h3>Working Student</h3>
-        <p class="cv-meta"><span class="cv-org">ViaConsulting Inh. M. Tutkun</span> · <time>10/2021</time> – <time>04/2024</time> · Berlin</p>
+        <div class="cv-entry-head">
+          <h3>Working Student</h3>
+          <p class="cv-dates"><time>10/2021</time> to <time>04/2024</time></p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">ViaConsulting Inh. M. Tutkun</span> · Berlin</p>
         <ul>
           <li>Assisted management with process coordination and administrative support.</li>
         </ul>
       </article>
 
       <article class="cv-entry">
-        <h3>Self-employed</h3>
-        <p class="cv-meta"><span class="cv-org">Tecis</span> · <time>10/2020</time> – <time>09/2021</time> · Berlin</p>
+        <div class="cv-entry-head">
+          <h3>Self-employed</h3>
+          <p class="cv-dates"><time>10/2020</time> to <time>09/2021</time></p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">Tecis</span> · Berlin</p>
         <ul>
           <li>Client acquisition, data intake and advisory based on individual needs analyses.</li>
         </ul>
@@ -84,13 +97,13 @@
       <h2 id="projects-heading">Projects</h2>
 
       <article class="cv-entry cv-entry--compact">
-        <h3>Fix It Together – full-stack web application</h3>
+        <h3>Fix It Together</h3>
         <p>Platform for repair requests with ticketing, matching, chat and ratings. Python, MySQL. <a class="cv-project-link" href="https://github.com/timmundt/Fix-It-Togehter" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p>
       </article>
 
       <article class="cv-entry cv-entry--compact">
         <h3>Identity Verification Platform (in development)</h3>
-        <p>B2B identity verification API — document OCR, biometric matching, and a decision engine, with an operator dashboard and live capture on web and mobile.</p>
+        <p>B2B identity verification API: document OCR, biometric matching, and a decision engine, with an operator dashboard and live capture on web and mobile.</p>
       </article>
     </section>
 
@@ -98,20 +111,32 @@
       <h2 id="education-heading">Education</h2>
 
       <article class="cv-entry cv-entry--compact">
-        <h3>Berlin School of Economics and Law (HWR Berlin)</h3>
-        <p class="cv-meta">B.Sc. Business Informatics · <time>04/2024</time> – <time>expected 12/2026</time></p>
+        <div class="cv-entry-head">
+          <h3>Berlin School of Economics and Law (HWR Berlin)</h3>
+          <p class="cv-dates"><time>04/2024</time> to <time>expected 12/2026</time></p>
+        </div>
+        <p class="cv-meta">B.Sc. Business Informatics</p>
       </article>
       <article class="cv-entry cv-entry--compact">
-        <h3>Technische Universität Berlin</h3>
-        <p class="cv-meta">B.Sc. Business Informatics (until university transfer) · <time>09/2019</time> – <time>03/2024</time> · Transferred to HWR Berlin for its more practice-oriented profile.</p>
+        <div class="cv-entry-head">
+          <h3>Technische Universität Berlin</h3>
+          <p class="cv-dates"><time>09/2019</time> to <time>03/2024</time></p>
+        </div>
+        <p class="cv-meta">B.Sc. Business Informatics (until university transfer) · Transferred to HWR Berlin for its more practice-oriented profile.</p>
       </article>
       <article class="cv-entry cv-entry--compact">
-        <h3>Freie Universität Berlin</h3>
-        <p class="cv-meta">Computer Science (1 semester) · <time>04/2019</time> – <time>09/2019</time></p>
+        <div class="cv-entry-head">
+          <h3>Freie Universität Berlin</h3>
+          <p class="cv-dates"><time>04/2019</time> to <time>09/2019</time></p>
+        </div>
+        <p class="cv-meta">Computer Science (1 semester)</p>
       </article>
       <article class="cv-entry cv-entry--compact">
-        <h3>Leibniz-Gymnasium, Berlin</h3>
-        <p class="cv-meta">Abitur (university entrance qualification) · <time>09/2012</time> – <time>06/2018</time> · Advanced courses: Computer Science and English.</p>
+        <div class="cv-entry-head">
+          <h3>Leibniz-Gymnasium, Berlin</h3>
+          <p class="cv-dates"><time>09/2012</time> to <time>06/2018</time></p>
+        </div>
+        <p class="cv-meta">Abitur (university entrance qualification) · Advanced courses: Computer Science and English.</p>
       </article>
     </section>
 

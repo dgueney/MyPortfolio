@@ -21,16 +21,17 @@
 
   <main id="cv-main" class="cv-page">
     <header class="cv-header">
-      <h1>Denizcan Güney</h1>
-      <p class="cv-headline">B.Sc.-Student Wirtschaftsinformatik – Data Analyst / Business Intelligence</p>
-      <p class="cv-contact">
-        <a href="mailto:denizcan.gueney@gmail.com">denizcan.gueney@gmail.com</a>
-        · <a href="tel:+4917670815328">+49 176 70815328</a>
-        · Berlin, Deutschland
-        · <a href="https://www.linkedin.com/in/denizcangueney" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        · <a href="https://denizcangueney.de/" target="_blank" rel="noopener noreferrer">denizcangueney.de</a>
-      </p>
-      <p class="cv-availability">Verfügbar ab 10/2026 · Studienabschluss voraussichtlich 12/2026</p>
+      <div class="cv-header-top">
+        <h1>Denizcan Güney</h1>
+        <p class="cv-availability">Verfügbar ab 10/2026 · Studienabschluss voraussichtlich 12/2026</p>
+      </div>
+      <p class="cv-headline">B.Sc.-Student Wirtschaftsinformatik · Data Analyst / Business Intelligence</p>
+      <ul class="cv-contact">
+        <li><a href="mailto:denizcan.gueney@gmail.com">denizcan.gueney@gmail.com</a></li>
+        <li><a href="tel:+4917670815328">+49 176 70815328</a></li>
+        <li>Berlin, Deutschland</li>
+        <li><a href="https://denizcangueney.de/" target="_blank" rel="noopener noreferrer">denizcangueney.de</a></li>
+      </ul>
     </header>
 
     <section class="cv-section cv-section--profile" aria-labelledby="summary-heading">
@@ -42,8 +43,11 @@
       <h2 id="experience-heading">Berufserfahrung</h2>
 
       <article class="cv-entry">
-        <h3>Praktikum Data Excellence / Business Intelligence</h3>
-        <p class="cv-meta"><span class="cv-org">Robert Bosch GmbH</span> · <time>04/2026</time> – <time>09/2026</time> (laufend) · Berlin</p>
+        <div class="cv-entry-head">
+          <h3>Praktikum Data Excellence / Business Intelligence</h3>
+          <p class="cv-dates"><time>04/2026</time> bis <time>09/2026</time> (laufend)</p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">Robert Bosch GmbH</span> · Berlin</p>
         <ul>
           <li>Python-Framework für Data-Quality-Monitoring entwickelt, das Prüfung, Bewertung und Historisierung von CAFM-Daten automatisiert und manuelle Kontrollen ersetzt.</li>
           <li>Power-BI-Change-Report aufgebaut, der Änderungen an Raum-, Flächen- und Organisationsdaten ohne manuelle Vergleiche nachvollziehbar macht.</li>
@@ -53,26 +57,35 @@
       </article>
 
       <article class="cv-entry">
-        <h3>Werkstudent Produktmanagement</h3>
-        <p class="cv-meta"><span class="cv-org">Berliner Verkehrsbetriebe (BVG) – Jelbi</span> · <time>04/2024</time> – <time>03/2026</time> · Berlin</p>
+        <div class="cv-entry-head">
+          <h3>Werkstudent Produktmanagement</h3>
+          <p class="cv-dates"><time>04/2024</time> bis <time>03/2026</time></p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">Berliner Verkehrsbetriebe (BVG), Jelbi</span> · Berlin</p>
         <ul>
-          <li>Fraudbezogene Vorfälle um 30–40 % reduziert – durch optimierte Fraud-Detection-Logiken und gezielte Regelanpassungen.</li>
+          <li>Fraudbezogene Vorfälle um 30–40 % reduziert durch optimierte Fraud-Detection-Logiken und gezielte Regelanpassungen.</li>
           <li>Eigenständiges Fraud Monitoring aufgebaut, neue Betrugsmuster identifiziert und Gegenmaßnahmen abgeleitet.</li>
           <li>Nutzerfeedback, Supportfälle und Nutzungsdaten ausgewertet und daraus Produktverbesserungen abgeleitet.</li>
         </ul>
       </article>
 
       <article class="cv-entry">
-        <h3>Werkstudent</h3>
-        <p class="cv-meta"><span class="cv-org">ViaConsulting Inh. M. Tutkun</span> · <time>10/2021</time> – <time>04/2024</time> · Berlin</p>
+        <div class="cv-entry-head">
+          <h3>Werkstudent</h3>
+          <p class="cv-dates"><time>10/2021</time> bis <time>04/2024</time></p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">ViaConsulting Inh. M. Tutkun</span> · Berlin</p>
         <ul>
           <li>Assistenz der Geschäftsführung, Prozesskoordination und administrative Unterstützung.</li>
         </ul>
       </article>
 
       <article class="cv-entry">
-        <h3>Selbstständig</h3>
-        <p class="cv-meta"><span class="cv-org">Tecis</span> · <time>10/2020</time> – <time>09/2021</time> · Berlin</p>
+        <div class="cv-entry-head">
+          <h3>Selbstständig</h3>
+          <p class="cv-dates"><time>10/2020</time> bis <time>09/2021</time></p>
+        </div>
+        <p class="cv-meta"><span class="cv-org">Tecis</span> · Berlin</p>
         <ul>
           <li>Kundenakquise, Datenaufnahme und Beratung auf Basis individueller Bedarfsanalysen.</li>
         </ul>
@@ -83,13 +96,13 @@
       <h2 id="projects-heading">Projekte</h2>
 
       <article class="cv-entry cv-entry--compact">
-        <h3>Fix It Together – Full-Stack-Webanwendung</h3>
+        <h3>Fix It Together</h3>
         <p>Plattform für Reparaturanfragen mit Ticketing, Matching, Chat und Bewertungen. Python, MySQL. <a class="cv-project-link" href="https://github.com/timmundt/Fix-It-Togehter" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p>
       </article>
 
       <article class="cv-entry cv-entry--compact">
         <h3>Identitätsverifizierungs-Plattform (in Entwicklung)</h3>
-        <p>B2B-API zur Identitätsprüfung – Dokumenten-OCR, biometrischer Abgleich und Decision Engine, mit Operator-Dashboard und Live-Capture auf Web und Mobile.</p>
+        <p>B2B-API zur Identitätsprüfung: Dokumenten-OCR, biometrischer Abgleich und Decision Engine, mit Operator-Dashboard und Live-Capture auf Web und Mobile.</p>
       </article>
     </section>
 
@@ -97,20 +110,32 @@
       <h2 id="education-heading">Bildungsweg</h2>
 
       <article class="cv-entry cv-entry--compact">
-        <h3>Hochschule für Wirtschaft und Recht (HWR) Berlin</h3>
-        <p class="cv-meta">B.Sc. Wirtschaftsinformatik · <time>04/2024</time> – <time>voraussichtlich 12/2026</time></p>
+        <div class="cv-entry-head">
+          <h3>Hochschule für Wirtschaft und Recht (HWR) Berlin</h3>
+          <p class="cv-dates"><time>04/2024</time> bis <time>voraussichtlich 12/2026</time></p>
+        </div>
+        <p class="cv-meta">B.Sc. Wirtschaftsinformatik</p>
       </article>
       <article class="cv-entry cv-entry--compact">
-        <h3>Technische Universität Berlin</h3>
-        <p class="cv-meta">B.Sc. Wirtschaftsinformatik (bis zum Hochschulwechsel) · <time>09/2019</time> – <time>03/2024</time> · Wechsel an die HWR Berlin zugunsten des praxisorientierten Profils.</p>
+        <div class="cv-entry-head">
+          <h3>Technische Universität Berlin</h3>
+          <p class="cv-dates"><time>09/2019</time> bis <time>03/2024</time></p>
+        </div>
+        <p class="cv-meta">B.Sc. Wirtschaftsinformatik (bis zum Hochschulwechsel) · Wechsel an die HWR Berlin zugunsten des praxisorientierten Profils.</p>
       </article>
       <article class="cv-entry cv-entry--compact">
-        <h3>Freie Universität Berlin</h3>
-        <p class="cv-meta">Informatik (1 Semester) · <time>04/2019</time> – <time>09/2019</time></p>
+        <div class="cv-entry-head">
+          <h3>Freie Universität Berlin</h3>
+          <p class="cv-dates"><time>04/2019</time> bis <time>09/2019</time></p>
+        </div>
+        <p class="cv-meta">Informatik (1 Semester)</p>
       </article>
       <article class="cv-entry cv-entry--compact">
-        <h3>Leibniz-Gymnasium, Berlin</h3>
-        <p class="cv-meta">Allgemeine Hochschulreife · <time>09/2012</time> – <time>06/2018</time> · Leistungskurse: Informatik und Englisch.</p>
+        <div class="cv-entry-head">
+          <h3>Leibniz-Gymnasium, Berlin</h3>
+          <p class="cv-dates"><time>09/2012</time> bis <time>06/2018</time></p>
+        </div>
+        <p class="cv-meta">Allgemeine Hochschulreife · Leistungskurse: Informatik und Englisch.</p>
       </article>
     </section>
 

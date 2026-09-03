@@ -31,8 +31,8 @@
     "full": {
       "suffix": "",
       "headline": {
-        "de": "B.Sc.-Student Wirtschaftsinformatik – Data & Business Intelligence",
-        "en": "B.Sc. Business Informatics Student – Data & Business Intelligence"
+        "de": "B.Sc.-Student Wirtschaftsinformatik · Data & Business Intelligence",
+        "en": "B.Sc. Business Informatics Student · Data & Business Intelligence"
       },
       "summary": {
         "de": "Student der Wirtschaftsinformatik an der Schnittstelle von Daten, BI und Produkt. Aktuell im Praktikum bei Bosch (Data Excellence / BI) mit Fokus auf Python-basiertes Data-Quality-Monitoring und Power-BI-Reporting; zuvor zwei Jahre im Produktmanagement bei Jelbi (BVG) mit Schwerpunkt Fraud Prevention.",
@@ -42,8 +42,8 @@
     "data": {
       "suffix": "-data",
       "headline": {
-        "de": "B.Sc.-Student Wirtschaftsinformatik – Data Analyst / Business Intelligence",
-        "en": "B.Sc. Business Informatics Student – Data Analyst / Business Intelligence"
+        "de": "B.Sc.-Student Wirtschaftsinformatik · Data Analyst / Business Intelligence",
+        "en": "B.Sc. Business Informatics Student · Data Analyst / Business Intelligence"
       },
       "summary": {
         "de": "Student der Wirtschaftsinformatik mit Schwerpunkt Data Quality, Business Intelligence und Datenmodellierung. Im Praktikum bei Bosch entwickle ich ein Python-basiertes Data-Quality-Monitoring und historisierte Power-BI-Reports auf SQL- und Data-Warehouse-Daten.",
@@ -53,8 +53,8 @@
     "product": {
       "suffix": "-product",
       "headline": {
-        "de": "B.Sc.-Student Wirtschaftsinformatik – Product / Business Analyst",
-        "en": "B.Sc. Business Informatics Student – Product / Business Analyst"
+        "de": "B.Sc.-Student Wirtschaftsinformatik · Product / Business Analyst",
+        "en": "B.Sc. Business Informatics Student · Product / Business Analyst"
       },
       "summary": {
         "de": "Student der Wirtschaftsinformatik mit zwei Jahren Produktmanagement bei Jelbi (BVG): Fraud Monitoring, Verifizierungsprozesse und datengetriebene Produktverbesserungen. Aktuell im Praktikum bei Bosch mit Fokus auf Anforderungsmanagement und Reporting-Governance.",
@@ -75,6 +75,7 @@
       "skills": "Kenntnisse",
       "languages": "Sprachen",
       "ongoing": "laufend",
+      "periodSep": "bis",
       "skipLink": "Zum Inhalt springen"
     },
     "en": {
@@ -89,6 +90,7 @@
       "skills": "Skills",
       "languages": "Languages",
       "ongoing": "ongoing",
+      "periodSep": "to",
       "skipLink": "Skip to content"
     }
   },
@@ -170,8 +172,8 @@
     },
     {
       "company": {
-        "de": "Berliner Verkehrsbetriebe (BVG) – Jelbi",
-        "en": "Berliner Verkehrsbetriebe (BVG) – Jelbi"
+        "de": "Berliner Verkehrsbetriebe (BVG), Jelbi",
+        "en": "Berliner Verkehrsbetriebe (BVG), Jelbi"
       },
       "title": {
         "de": "Werkstudent Produktmanagement",
@@ -212,7 +214,7 @@
       "bullets": [
         {
           "tags": ["data", "product"],
-          "de": "Fraudbezogene Vorfälle um 30–40 % reduziert – durch optimierte Fraud-Detection-Logiken und gezielte Regelanpassungen.",
+          "de": "Fraudbezogene Vorfälle um 30–40 % reduziert durch optimierte Fraud-Detection-Logiken und gezielte Regelanpassungen.",
           "en": "Reduced fraud-related incidents by roughly 30–40% by optimizing fraud detection logic and adjusting rules."
         },
         {
@@ -320,8 +322,8 @@
     {
       "tags": ["data", "product"],
       "name": {
-        "de": "Fix It Together – Full-Stack-Webanwendung",
-        "en": "Fix It Together – full-stack web application"
+        "de": "Fix It Together",
+        "en": "Fix It Together"
       },
       "description": {
         "de": "Plattform für Reparaturanfragen mit Ticketing, Matching, Chat und Bewertungen. Python, MySQL.",
@@ -356,8 +358,8 @@
         "en": "Identity Verification Platform (in development)"
       },
       "description": {
-        "de": "B2B-API zur Identitätsprüfung – Dokumenten-OCR, biometrischer Abgleich und Decision Engine, mit Operator-Dashboard und Live-Capture auf Web und Mobile.",
-        "en": "B2B identity verification API — document OCR, biometric matching, and a decision engine, with an operator dashboard and live capture on web and mobile."
+        "de": "B2B-API zur Identitätsprüfung: Dokumenten-OCR, biometrischer Abgleich und Decision Engine, mit Operator-Dashboard und Live-Capture auf Web und Mobile.",
+        "en": "B2B identity verification API: document OCR, biometric matching, and a decision engine, with an operator dashboard and live capture on web and mobile."
       },
       "link": "",
       "portfolio": {
