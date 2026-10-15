@@ -303,12 +303,6 @@ ${aboutParagraphs}
             <li><span>${escapeHtml(t(p.aboutSection.profileCard.availability, lang))}</span><span>${escapeHtml(t(data.availabilitySidebar, lang))}</span></li>
             <li><span>${escapeHtml(t(p.aboutSection.profileCard.email, lang))}</span><span><a href="mailto:${escapeHtml(data.email)}">${escapeHtml(data.email)}</a></span></li>
           </ul>
-          <p class="info-card-links">
-            ${escapeHtml(t(p.aboutSection.cvVariants.intro, lang))}
-            <a href="${cvDataHref}">${escapeHtml(t(p.aboutSection.cvVariants.data, lang))}</a>
-            ·
-            <a href="${cvProductHref}">${escapeHtml(t(p.aboutSection.cvVariants.product, lang))}</a>
-          </p>
         </aside>
       </div>
     </section>

@@ -181,23 +181,6 @@ body {
   border-color: #6b7280;
 }
 
-.info-card-links {
-  margin: 1rem 0 0;
-  font-size: 0.85rem;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.info-card-links a {
-  color: var(--text-soft);
-  text-decoration: none;
-}
-
-.info-card-links a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
 .project-image {
   width: 100%;
   aspect-ratio: 16 / 9;

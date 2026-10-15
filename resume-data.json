@@ -722,20 +722,6 @@
         },
         "availability": { "de": "Verfügbar ab", "en": "Available from" },
         "email": { "de": "E-Mail", "en": "Email" }
-      },
-      "cvVariants": {
-        "intro": {
-          "de": "Rollenspezifische Lebensläufe:",
-          "en": "Role-specific résumés:"
-        },
-        "data": {
-          "de": "Data-fokussierter Lebenslauf",
-          "en": "Data-focused résumé"
-        },
-        "product": {
-          "de": "Product-fokussierter Lebenslauf",
-          "en": "Product-focused résumé"
-        }
       }
     },
     "skillsSection": {
@@ -760,8 +746,8 @@
         "en": "Portfolio website for applications and projects."
       },
       "cvVariants": {
-        "data": { "de": "Data-Lebenslauf", "en": "Data résumé" },
-        "product": { "de": "Product-Lebenslauf", "en": "Product résumé" }
+        "data": { "de": "Lebenslauf · Data", "en": "Résumé · Data" },
+        "product": { "de": "Lebenslauf · Product", "en": "Résumé · Product" }
       }
     },
     "jobTitle": {
