@@ -351,6 +351,7 @@ ${renderEducation(lang)}
       <span>© <span id="year"></span> ${escapeHtml(data.name)}</span>
       <span class="footer-note">${escapeHtml(t(p.footer.note, lang))}</span>
       <span class="footer-cv-links">
+        ${escapeHtml(t(p.footer.cvVariants.label, lang))}:
         <a href="${cvDataHref}">${escapeHtml(t(p.footer.cvVariants.data, lang))}</a>
         ·
         <a href="${cvProductHref}">${escapeHtml(t(p.footer.cvVariants.product, lang))}</a>

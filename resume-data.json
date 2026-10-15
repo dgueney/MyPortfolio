@@ -746,8 +746,9 @@
         "en": "Portfolio website for applications and projects."
       },
       "cvVariants": {
-        "data": { "de": "Lebenslauf · Data", "en": "Résumé · Data" },
-        "product": { "de": "Lebenslauf · Product", "en": "Résumé · Product" }
+        "label": { "de": "Lebenslauf", "en": "Résumé" },
+        "data": { "de": "Data", "en": "Data" },
+        "product": { "de": "Product", "en": "Product" }
       }
     },
     "jobTitle": {
